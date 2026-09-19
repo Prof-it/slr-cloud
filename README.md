@@ -8,7 +8,7 @@ This repository is the evidence package accompanying the following research cont
 
 ```bibtex
 @inproceedings{sabazadeh_lu_2026_multicloud,
-  author    = {Sabazadeh, S. and Lu, Tianxiang},
+  author    = {Sabazadeh, Sara and Lu, Tianxiang},
   title     = {Cybersecurity Governance in Multi-Cloud Environments: A Systematic Review and Cross-Framework Gap Analysis},
   booktitle = {IEEE 2026 International Conference on Emerging Trends in Engineering and Computing (ETECOM)},
   year      = {2026},

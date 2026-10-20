@@ -1,34 +1,36 @@
 # Data Availability Statement
 
-> **TEMPLATE — replace with the actual data availability statement for the
-> publication.**
+All data supporting the findings of the ETECOM 2026 paper *Cybersecurity
+Governance in Multi-Cloud Environments: A Systematic Review and Cross-Framework
+Gap Analysis* (S. Sabazadeh, T. Lu) are available in this repository
+(`https://github.com/Prof-it/slr-cloud`), release `v1.0-etecom2026`:
 
-All data supporting the findings of this systematic literature review are
-available in this repository (`https://github.com/Prof-it/slr-cloud`),
-including:
+- search strings, search log and archived database exports (`01_search/`);
+- full-text screening decisions and exclusion reasons (`02_screening/`);
+- codebook, cell-level coding evidence and the original coding workbook
+  (`03_coding/`);
+- quality-assessment rubric (`04_quality_assessment/`);
+- coverage matrices and gap taxonomy (`05_synthesis/`);
+- included-study bibliography with DOIs (`06_included_studies/`);
+- PRISMA counts (`07_prisma/`);
+- consistency-check script and derived tables (`08_analysis/`,
+  `09_tables_figures/`).
 
-- The raw search export(s) (`01_search/`).
-- Screening decisions and exclusion reasons (`02_screening/`).
-- The codebook and coding evidence, with page/section-level traceability to
-  source studies (`03_coding/`).
-- Quality assessment scores (`04_quality_assessment/`).
-- Synthesis artifacts (`05_synthesis/`).
-- The final included-study bibliography (`06_included_studies/`).
-- PRISMA reporting counts (`07_prisma/`).
-- Analysis scripts/notebooks used to generate manuscript tables and figures
-  (`08_analysis/`, `09_tables_figures/`).
+Gaps in the archived record are documented in
+[`known_issues.md`](known_issues.md).
 
 ## Restrictions
 
-[TEMPLATE — e.g., Full-text PDFs of included studies are not redistributed
-in this repository due to publisher copyright restrictions. Studies can be
-retrieved via the DOIs listed in `06_included_studies/included_studies.bib`.]
+Full-text PDFs are redistributed only where the licence permits (IEEE Access,
+CC BY 4.0). All other included studies can be retrieved via the DOIs in
+`06_included_studies/included_studies.csv`. ISO/IEC 27001:2022 is a paid
+standard and is not redistributed.
 
 ## Persistent Identifier
 
-[TEMPLATE — e.g., A snapshot of this repository at the time of publication is
-archived at Zenodo/OSF: DOI TBD.]
+To be added on archiving the release (e.g. Zenodo DOI).
 
 ## Contact
 
-[TEMPLATE — corresponding author name and email for data-related questions.]
+Tianxiang Lu, IU International University of Applied Sciences
+(tianxiang.lu@iu.org).

@@ -1,43 +1,28 @@
 # 03_coding — Codebook and Coding Evidence
 
-**Status: derived from `06_included_studies/` (primary research artifact of
-this review).**
+**Status: derived from `06_included_studies/` (primary research artifact).**
 
 ## Contents
 
-- `codebook.xlsx` — Defines the coding scheme: every code, its definition,
-  category/theme grouping, and an example application. This is the
-  authoritative reference for what each code means.
-- `coding_evidence.xlsx` — **The most important artifact in this repository.**
-  Records every individual coding decision applied to an included study,
-  linked to the exact page/section/quote in the source document that
-  justifies the code. This enables full traceability from a synthesis claim
-  back to the original evidence.
-- `coding_legend.md` — Human-readable explanation of the coding process,
-  confidence levels, and how to read `coding_evidence.xlsx`.
+- `codebook.xlsx` — codes per dimension (definition, grounding, origin),
+  dimension assignment rules, coverage scale.
+- `coding_evidence.xlsx` — one row per source x dimension cell (84), with
+  segment, page, coding decision, v1 coverage and the coverage/evidence
+  published in ETECOM 2026.
+- `audit_v1_flags.csv` — known inconsistencies in v1 coding (input for v2).
+- `coding_legend.md` — how to read the files.
+- `source/Coding_Evidence_Workbook_MASTER_V4.xlsx` — original first-coder
+  workbook (unmodified).
 
-## Traceability Chain
+## Traceability
 
-```
-06_included_studies (study_id)
-        │
-        ▼
-03_coding/coding_evidence.xlsx (study_id, code_id, page/section, quote)
-        │
-        ▼
-03_coding/codebook.xlsx (code_id → definition/category)
-        │
-        ▼
-05_synthesis/* (aggregated by code/category)
-```
+`06_included_studies/included_studies.csv (study_id)` -> `coding_evidence.xlsx
+(study_id, code_id, evidence_id)` -> `codebook.xlsx (code_id)` ->
+`05_synthesis/*` (evidence_id, study_id).
 
 ## Rules
 
-- Every row in `coding_evidence.xlsx` MUST reference a `code_id` that exists
-  in `codebook.xlsx`, and a `study_id` that exists in
-  `06_included_studies/included_studies.csv`.
-- Page/section references are mandatory — a coding decision without a
-  traceable location is not acceptable for this review's evidentiary
-  standard.
-- If the codebook changes (codes added/renamed/merged), re-run coding
-  consistency checks and note the change in `coding_legend.md`.
+- Every `code_id` exists in `codebook.xlsx`; every `study_id` in
+  `included_studies.csv` (checked by `08_analysis/scripts/check_consistency.py`).
+- v2 coding (G1-G3 / M1-M3, independent coders) goes into new files; v1 stays
+  unchanged.

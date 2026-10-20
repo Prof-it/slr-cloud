@@ -1,21 +1,15 @@
 # 02_screening — Screening Decisions
 
-**Status: derived from `01_search/` (first derived layer).**
+**Status: derived from `01_search/`.**
 
 ## Contents
 
-- `screening.xlsx` — One row per record retrieved from the search, tracking
-  title/abstract screening and full-text screening decisions, reviewer(s),
-  and the reason for exclusion (coded per `exclusion_reasons.md`).
-- `exclusion_reasons.md` — The controlled vocabulary of exclusion reason
-  codes used in `screening.xlsx`.
+- `screening.xlsx` — sheet `FullText_Screening`: the 16 full-text eligibility
+  decisions (10 included, 6 excluded with reason code); sheet
+  `Normative_sources`: the four Phase 2 documents added outside PRISMA; sheet
+  `README`: notes.
+- `exclusion_reasons.md` — exclusion reason codes.
 
-## Rules
-
-- Every record in `01_search/ebsco_export.bib` (and any other raw export)
-  must have a corresponding row in `screening.xlsx` — this preserves
-  full traceability for the PRISMA flow diagram (`07_prisma/`).
-- Use the `record_id` column to link back to the BibTeX `cite_key` in the raw
-  export.
-- Studies marked `Include` at the full-text stage feed into
-  `06_included_studies/`.
+Record-level title/abstract decisions for the 1,599 deduplicated records were
+not archived (see `../docs/known_issues.md`, item 5). The journal extension
+will log every record.

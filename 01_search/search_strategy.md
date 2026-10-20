@@ -1,12 +1,14 @@
 # Search Strategy
 
-## Research Questions
+## Research Question (as published, ETECOM 2026)
 
-- **RQ1 (Primary):** Which dimensions of multi-cloud governance are explicitly covered or left unaddressed by existing cybersecurity frameworks and standards, and what patterns of governance gaps emerge when these frameworks are examined through a structured comparative analysis?
-- **SRQ1:** What specific governance fragmentation problems and associated threat patterns can be identified in multi-cloud settings on the basis of recent peer-reviewed research (2020–2025)?
-- **SRQ2:** To what degree do current cybersecurity governance frameworks and standards meaningfully cover the governance requirements of multi-cloud environments, and where do the most consequential limitations surface in operational cross-provider scenarios?
-- **SRQ3:** Which aspects of governance are consistently insufficiently addressed in the reviewed literature?
-- **SRQ4:** What patterns of governance gaps show up in the comparative mapping matrix, and what does this mean for future empirical studies and practitioner guidance?
+Which governance dimensions relevant to multi-cloud environments are covered
+by established cybersecurity frameworks, to what extent are they
+operationalised for cross-provider coordination, and what recurring gaps
+emerge from a structured comparative analysis?
+
+The original thesis formulation (RQ1, SRQ1-SRQ4) was condensed into this
+single question for the conference paper.
 
 ## Databases Searched
 
@@ -42,10 +44,15 @@ Field restrictions: Title/Abstract/Keywords
 Document types included: peer-reviewed journal articles, conference papers
 Language: English only
 
+## Note on reporting
+
+ETECOM 2026 Sec. III-A reports a simplified conceptual Boolean structure. The
+strings above are the executed queries.
+
 ## Inclusion Criteria (for screening)
 
 1. Peer-reviewed journal article or conference proceeding substantively addressing multi-cloud security, cloud governance, cybersecurity governance frameworks, CSPM, cloud IAM, shared responsibility, or cloud security systematic literature reviews
-2. Indexed in IEEE Xplore, ACM Digital Library, SpringerLink, or ScienceDirect
+2. Indexed in IEEE Xplore, ACM Digital Library, SpringerLink, or ScienceDirect (EBSCO HOST was searched as a fifth database; see ../docs/known_issues.md, item 6)
 3. Published between 2020 and 2025
 
 ## Exclusion Criteria (for screening)

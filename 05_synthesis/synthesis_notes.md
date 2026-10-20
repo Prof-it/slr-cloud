@@ -1,38 +1,33 @@
-# Synthesis Notes
+# Synthesis Notes (v1, ETECOM 2026)
 
-> **TEMPLATE — replace with the actual narrative synthesis.**
+## Approach
 
-## Thematic Synthesis Approach
+1. Cell-level coding of 14 sources against D1-D6 (`03_coding/`).
+2. Grouping of recurring code patterns per dimension into gap themes
+   (`governance_gap_taxonomy.xlsx`, sheet `Code_to_theme_v1`).
+3. Consolidation into five categories and eleven gap instances
+   (published ETECOM 2026 Table V; sheet `Gap_Taxonomy`).
 
-[TEMPLATE — e.g., Thematic synthesis following Cruzes & Dybå (2011): codes
-from `03_coding/codebook.xlsx` were grouped into higher-order themes based on
-conceptual similarity, cross-referencing `comparative_coverage_matrix.xlsx`.]
+A governance gap is defined narrowly as the absence or limited explicitness
+of guidance for coordinating an otherwise established governance provision
+across heterogeneous cloud providers (ETECOM 2026, Sec. I). The taxonomy is an
+analytical synthesis, not an empirically validated model. CPCG-2 and CRPNG-2
+are moderate-confidence inferences.
 
 ## Inter-Rater Reliability
 
 | Metric | Value | Notes |
 |---|---|---|
-| Cohen's kappa (title/abstract screening) | [TEMPLATE e.g., 0.82] | [TEMPLATE — sample size, coders] |
-| Cohen's kappa (coding, double-coded subsample) | [TEMPLATE e.g., 0.76] | [TEMPLATE] |
+| Title/abstract screening agreement | not assessed | single reviewer |
+| Coding agreement | not assessed | single coder; see `docs/known_issues.md` |
 
-## Key Findings (EXAMPLE structure — replace with real findings)
+## Files
 
-1. **[EXAMPLE THEME] Policy fragmentation across providers** — Evidence:
-   `EV-0001`, `EV-0014`, `EV-0027` (see `03_coding/coding_evidence.xlsx`).
-2. **[EXAMPLE THEME] Lack of standardized cross-cloud audit trails** —
-   Evidence: `EV-0009`, `EV-0033`.
-
-## Governance Gaps Overview
-
-See [governance_gap_taxonomy.xlsx](governance_gap_taxonomy.xlsx) for the full
-structured taxonomy. Summary (EXAMPLE):
-
-- **Gap category [EXAMPLE]:** Cross-provider identity federation —
-  under-addressed in [N] of [M] included studies.
-- **Gap category [EXAMPLE]:** Unified compliance reporting — no study
-  proposes a vendor-neutral standard.
+- `comparative_coverage_matrix.xlsx` - v1 coverage per source (with evidence
+  IDs), published Table III, and v1 codes per cell.
+- `governance_gap_taxonomy.xlsx` - published Table V with cited sources and
+  derived candidate evidence cells; v1 code-to-theme rationale.
 
 ## Limitations
 
-[TEMPLATE — e.g., Search limited to English-language, peer-reviewed venues;
-grey literature and industry standards documents were out of scope.]
+See ETECOM 2026 Sec. VI and `docs/known_issues.md`.

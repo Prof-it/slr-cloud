@@ -1,0 +1,5 @@
+study_id,label,D1,D2,D3,D4,D5,D6
+NRM-01,ISO/IEC 27001:2022,No,Yes,Yes,Yes,Partial,Partial
+NRM-02,NIST CSF 2.0 (2024),No,Yes,Yes,Yes,Yes,Partial
+NRM-03,CSA Security Guidance v5 (2024),Partial,Yes,Yes,Yes,Yes,Yes
+NRM-04,"NIST SP 800-210 (Hu et al., 2020)",Partial,Partial,Yes,Partial,No,Partial

@@ -1,22 +1,14 @@
-# Exclusion Reason Codes
+# Exclusion Reasons
 
-> **TEMPLATE — adapt codes to the review's actual protocol.** These codes are
-> referenced by the `exclusion_reason_code` column in
-> [screening.xlsx](screening.xlsx).
+## Title/abstract stage (aggregate only)
 
-| Code | Reason | Screening Stage |
+1,583 of 1,599 records were excluded for topical irrelevance, publication
+type, scope (incl. date), or language. Record-level decisions were not
+archived (see `../docs/known_issues.md`).
+
+## Full-text stage (codes used in `screening.xlsx`)
+
+| Code | Reason | n |
 |---|---|---|
-| E1 | Not related to cloud computing | Title/Abstract |
-| E2 | Not related to governance (e.g., pure performance/cost optimization) | Title/Abstract |
-| E3 | Single-cloud only (no multi-cloud/hybrid-cloud aspect) | Title/Abstract |
-| E4 | Not peer-reviewed (blog post, whitepaper, non-archival) | Title/Abstract |
-| E5 | Duplicate record | Title/Abstract |
-| E6 | Wrong document type (e.g., editorial, poster, tutorial) | Title/Abstract |
-| E7 | Full text not accessible | Full-text |
-| E8 | No empirical or conceptual governance contribution on closer reading | Full-text |
-| E9 | Secondary study (survey/SLR) without new primary contribution | Full-text |
-| E10 | Language other than [TEMPLATE — e.g., English] | Title/Abstract |
-
-Add or remove codes as needed, but keep codes stable once screening has
-started so that `screening.xlsx` and `07_prisma/prisma_counts.xlsx` remain
-consistent.
+| FT-SCOPE | Outside multi-cloud governance scope (single-cloud focus or no governance-framework analysis) | 5 |
+| FT-NPR | Not peer-reviewed | 1 |

@@ -1,25 +1,25 @@
-# 01_search — Raw Search Data
+# 01_search — Search Data
 
-**Status: raw / source data.** Files here must reflect exactly what was
-retrieved from the literature databases, without any manual filtering.
+**Status: raw / source data (v1, search run April 2026).**
 
 ## Contents
 
-- `search_strategy.md` — Research questions, databases searched, full boolean
-  query strings, date ranges, and inclusion/exclusion criteria used to build
-  the queries.
-- `search_history.xlsx` — Log of every query execution (database, query
-  string, date run, number of hits, notes).
-- `ebsco_export.bib` — Raw, unmodified BibTeX export from the EBSCO database
-  search. This is the primary raw search artifact for EBSCO; if additional
-  databases were searched, add one export file per database (e.g.
-  `scopus_export.bib`, `ieee_export.csv`) and document them in
-  `search_history.xlsx`.
+- `search_strategy.md` — research question, databases, executed query strings,
+  criteria, citation tracking.
+- `search_history.xlsx` — one row per database run (hits, after deduplication,
+  notes).
+- `exports/search_results_by_database_2026-04.xlsx` — archived result lists per
+  database (IEEE Xplore, ACM DL, SpringerLink, ScienceDirect, EBSCO). The EBSCO
+  sheet holds 777 records after EBSCO-internal deduplication; the raw 996-record
+  export was not archived.
+- `exports/ebsco_export_partial_18records.bib` — partial EBSCO BibTeX export
+  (18 records), not the full result set.
+
+See `../docs/known_issues.md` (items 1-4) for date-filter and deduplication
+issues.
 
 ## Rules
 
-- Never hand-edit `ebsco_export.bib` (or any other raw export) to add/remove
-  records — filtering happens in `02_screening/`, not here.
-- If a database export is re-run (e.g., updated search), keep the previous
-  export (e.g., `ebsco_export_2026-01-15.bib`) and log the re-run in
-  `search_history.xlsx` rather than overwriting silently.
+- Never hand-edit archived exports.
+- New search runs (journal extension) go into new, dated files and new rows in
+  `search_history.xlsx`.

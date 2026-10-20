@@ -1,17 +1,11 @@
-# 09_tables_figures — Manuscript Tables and Figures
+# 09_tables_figures — Tables and Figures
 
 **Status: derived outputs.**
 
-## Contents
+- `generated/coverage_frequency_v1.csv` — Yes/Partial/No counts per dimension
+  for academic (n = 10) and normative (n = 4) sources, v1 coding.
+- `generated/tableIII_published_etecom2026.csv` — framework coverage as
+  published (ETECOM 2026 Table III).
 
-- `source_data/` — Intermediate data extracts used to build a specific
-  table/figure (e.g., a pivoted CSV feeding a plotting script).
-- `generated/` — Final rendered tables/figures (e.g., `.png`, `.pdf`, `.csv`)
-  ready for inclusion in the manuscript.
-
-## Rules
-
-- Everything in this directory should be regeneratable by re-running the
-  scripts/notebooks in `08_analysis/` against the data in `03_coding/`,
-  `04_quality_assessment/`, and `05_synthesis/`. Do not hand-edit generated
-  files.
+Regenerate with `python 08_analysis/scripts/check_consistency.py`; do not
+hand-edit.

@@ -1,38 +1,50 @@
-# Coding Legend
+# Coding Legend (v1, ETECOM 2026)
 
-> **TEMPLATE — adapt to the review's actual coding protocol.**
+## Approach
 
-## How to Read `coding_evidence.xlsx`
+Abductive qualitative content analysis (Mayring, 2014). Six dimensions
+(D1-D6) were fixed deductively a priori; within each dimension an initial set
+of mutually exclusive codes was derived from named field taxonomies (NIST SP
+800-145, NIST CSF 2.0 GOVERN, ISO/IEC 27001:2022 Annex A control types, CSA v5
+SSRM, NIST CSF 2.0 functions, Cuzzocrea & Belmerabet's IAM taxonomy), and
+extension codes were added where segments were not covered (origin
+`Abductive` in `codebook.xlsx`).
 
-Each row represents one **coding decision**: a single instance where a coder
-applied a code from `codebook.xlsx` to a specific piece of evidence in an
-included study.
+Each source x dimension cell carries two separate attributes:
+
+- **code** (`code_id`) - what the cited segment asserts (`NA` = dimension not
+  substantively addressed);
+- **coverage** (Yes / Partial / No) - how completely the source treats the
+  dimension at organisational level (see sheet `Coverage_scale_v1`). Coverage
+  does not imply explicit cross-provider coordination.
+
+## Files
+
+| File | Content |
+|---|---|
+| `codebook.xlsx` | Codes, dimensions with grounding and assignment rules, coverage scale |
+| `coding_evidence.xlsx` | 84 cells (14 sources x 6 dimensions) with segment, page, decision, v1 coverage and the coverage/evidence published in ETECOM 2026 Tables III/IV |
+| `audit_v1_flags.csv` | Known inconsistencies in v1 coding, input for v2 |
+| `source/Coding_Evidence_Workbook_MASTER_V4.xlsx` | Original first-coder workbook, unmodified |
+
+## `coding_evidence.xlsx` columns
 
 | Column | Meaning |
 |---|---|
-| `evidence_id` | Unique ID for this coding decision (e.g., `EV-0001`). |
-| `study_id` | Foreign key to `06_included_studies/included_studies.csv`. |
-| `code_id` | Foreign key to `03_coding/codebook.xlsx`. |
-| `page` | Page number in the source PDF where the evidence appears. |
-| `section` | Section/subsection heading (e.g., "4.2 Access Control"). |
-| `quote_or_paraphrase` | Verbatim quote (preferred) or close paraphrase of the evidence. |
-| `evidence_type` | `quote`, `paraphrase`, `table`, `figure`, or `derived`. |
-| `coder` | Initials/ID of the coder who made the decision. |
-| `confidence` | `High` / `Medium` / `Low` — coder's confidence in the code's applicability. |
-| `second_coder_agreement` | `Agree` / `Disagree` / `Not double-coded` — used for inter-rater reliability. |
-| `notes` | Free-text notes, disagreement resolution, etc. |
+| `evidence_id` | `EV-nnn`, equal to the segment number in the original workbook |
+| `study_id` | Key into `06_included_studies/included_studies.csv` |
+| `dimension`, `code_id` | Dimension and code (key into `codebook.xlsx`) |
+| `page_as_recorded` | Page as recorded by the coder (mixes journal and PDF pages; see audit flag A15) |
+| `segment_verbatim` | Quoted or paraphrased evidence |
+| `coding_decision` | Coder's rationale |
+| `coverage_v1_workbook` | Coverage as originally coded (`*` = see CSA footnote in the paper) |
+| `coverage_published_etecom2026` | Coverage as published in ETECOM 2026 Table III (normative sources only) |
+| `published_evidence_etecom2026` | Clause/section evidence as published in Table IV |
+| `revision_note` | Present where published coverage differs from v1 |
+| `coder`, `second_coder`, `second_coder_agreement` | SS; no second coder in v1 |
 
-## Coding Process (TEMPLATE)
+## Reliability
 
-1. [TEMPLATE — e.g., Each included study is read in full by a primary coder.]
-2. [TEMPLATE — e.g., A random 20% subsample is double-coded by a second coder
-   for inter-rater reliability (Cohen's kappa reported in
-   `05_synthesis/synthesis_notes.md`).]
-3. [TEMPLATE — e.g., Disagreements are resolved via discussion and logged in
-   the `notes` column.]
-
-## Confidence Levels
-
-- **High** — Evidence directly and unambiguously supports the code.
-- **Medium** — Evidence supports the code but requires some interpretation.
-- **Low** — Evidence is suggestive; flagged for review/discussion.
+Single coder (SS). No inter-rater reliability was computed for v1. The
+journal extension (v2) will use a revised codebook and independent duplicate
+coding.

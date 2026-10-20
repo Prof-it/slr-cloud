@@ -21,3 +21,11 @@ venv/
 # Local environment
 .env
 .runbook/*
+
+# Full-text PDFs of included studies: only open-licence (CC BY) PDFs are
+# versioned. Publisher-licensed PDFs stay local; retrieve them via the DOIs in
+# 06_included_studies/included_studies.csv. Already-tracked PDFs must also be
+# removed from the index (git rm --cached) and from history before going public.
+06_included_studies/*.pdf
+!06_included_studies/ALOUFFI.pdf
+!06_included_studies/DININGRAT.pdf

@@ -128,7 +128,7 @@ NIST SP 800-53).
 
 ## 7. Screening
 
-- **Title/abstract:** one screener on all records (ASReview prioritisation allowed; stopping rule pre-specified, e.g. SAFE procedure). A second screener independently screens all records the first included plus a random 10% of exclusions. Report agreement and the estimated number of missed includes.
+- **Title/abstract:** one screener on all records (ASReview prioritisation allowed; stopping rule: stop once ≥50% of records are screened **and** the last 100 consecutive decisions were exclusions). A second screener independently screens, blind to screener 1, all records the first included plus a random 10% of the excluded and of the unscreened records (`slr_pipeline.py sample`, fixed seed). Report agreement and the estimated number of missed includes.
 - **Full text:** two reviewers independently; disagreements are adjudicated and logged.
 - **Eligibility criteria:** as v1 (`01_search/search_strategy.md`), with the date window updated and the indexing criterion replaced by "retrieved by the registered search or snowballing".
 

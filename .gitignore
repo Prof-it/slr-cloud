@@ -29,3 +29,7 @@ venv/
 06_included_studies/*.pdf
 !06_included_studies/ALOUFFI.pdf
 !06_included_studies/DININGRAT.pdf
+
+# Second-screener answer keys: keep local until screener 2 has delivered,
+# then add with `git add -f`.
+*_KEY_do_not_share.csv

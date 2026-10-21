@@ -429,6 +429,34 @@ def cmd_prisma(a):
         r = last["recall"]
         print(f"Gold-set recall: {r['gold_found']}/{r['gold_total']} = {r['recall']}  missed {r['missed']}")
 
+# ------------------------------------------------------ second-screener sample
+def cmd_sample(a):
+    """Blind sample for screener 2: all screener-1 includes, plus a random share
+    of excluded and of unscreened records. Decisions are removed from the
+    sample; the stratum of each record is kept in a separate key file."""
+    import math, random
+    rows = read_csv(a.screener1)
+    if not rows or a.label_col not in rows[0]:
+        sys.exit(f"column '{a.label_col}' not found in {a.screener1}")
+    strata = {"included": [], "excluded": [], "unscreened": []}
+    for r in rows:
+        v = (r.get(a.label_col) or "").strip()
+        strata["included" if v == "1" else "excluded" if v == "0" else "unscreened"].append(r)
+    rng = random.Random(a.seed)
+    picked = list(strata["included"])
+    for s in ("excluded", "unscreened"):
+        n = math.ceil(len(strata[s]) * a.share)
+        picked += rng.sample(strata[s], n) if n else []
+    rng.shuffle(picked)
+    key = {id(r): s for s, rs in strata.items() for r in rs}
+    cols = ["record_id", "title", "abstract", "authors", "year", "venue", "doi"]
+    blind = [{**{c: r.get(c, "") for c in cols}, "decision": "", "reason": ""} for r in picked]
+    write_csv(a.out, blind, cols + ["decision", "reason"])
+    keyfile = os.path.splitext(a.out)[0] + "_KEY_do_not_share.csv"
+    write_csv(keyfile, [{"record_id": r.get("record_id"), "stratum": key[id(r)]} for r in picked], ["record_id", "stratum"])
+    log(a.run, "sample", screener1_file=os.path.basename(a.screener1), seed=a.seed, share=a.share,
+        strata={s: len(v) for s, v in strata.items()}, sample_size=len(picked), output=os.path.basename(a.out))
+
 # --------------------------------------------------------------- coding form
 DIMS = [("D2", "Governance structure"), ("D3", "Policy definition and enforcement"),
         ("D4", "Shared responsibility and accountability"), ("D5", "Risk posture and security monitoring"),
@@ -519,6 +547,11 @@ def main():
     s.add_argument("--run", required=True); s.set_defaults(f=cmd_export)
     s = sub.add_parser("prisma", help="print PRISMA counts from the run log")
     s.add_argument("--run", required=True); s.set_defaults(f=cmd_prisma)
+    s = sub.add_parser("sample", help="blind second-screener sample from screener-1 decisions")
+    s.add_argument("--run", required=True); s.add_argument("--screener1", required=True, help="screener-1 CSV with record_id and a decision column")
+    s.add_argument("--label-col", default="asreview_label", help="1 = include, 0 = exclude, empty = not screened (ASReview LAB export column)")
+    s.add_argument("--share", type=float, default=0.10); s.add_argument("--seed", type=int, default=20261116)
+    s.add_argument("--out", required=True); s.set_defaults(f=cmd_sample)
     s = sub.add_parser("coding-form", help="blank v2 coding form (xlsx) for one coder; needs openpyxl")
     s.add_argument("--included", required=True, help="CSV with study_id and label/title")
     s.add_argument("--coder", required=True); s.add_argument("--out", required=True); s.set_defaults(f=cmd_coding_form)

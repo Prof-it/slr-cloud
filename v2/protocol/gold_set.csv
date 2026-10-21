@@ -1,0 +1,11 @@
+gold_id,doi,title,year,gold_source,in_recall_denominator,v2_eligible,notes
+GS-01,10.1109/FiCloud62933.2024.00040,Data security and governance in multi-cloud computing environment,2024,v1 include (STU-01),Y,tbc,check against v2 eligibility
+GS-02,10.1145/3603166.3632553,Cloud security frameworks: A comparison to evaluate cloud control standards,2023,v1 include (STU-02),Y,tbc,"framework-comparison study, not multi-cloud: retrievable only via Stream 2 (protocol §2a)"
+GS-03,10.1109/ACCESS.2025.3561352,Security issues in multi-cloud: A systematic literature review,2025,v1 include (STU-03),Y,tbc,check against v2 eligibility
+GS-04,10.1109/IJCC64742.2024.10847280,"On the comparative analysis of trends in cybersecurity risk assessment, governance, and compliance frameworks",2024,v1 include (STU-04),Y,tbc,"framework-comparison study, not multi-cloud: retrievable only via Stream 2 (protocol §2a)"
+GS-05,10.1109/BigData62323.2024.10826004,"Privacy-preserving identity and access management in multiple cloud environments: Models, issues, and solutions",2024,v1 include (STU-05),Y,tbc,check against v2 eligibility
+GS-06,10.1007/s13198-024-02551-0,Multi-cloud security model: Establishment of inter-server communication for authentication integrity,2024,v1 include (STU-06),Y,tbc,check against v2 eligibility
+GS-07,10.1109/ACCESS.2021.3073203,A systematic literature review on cloud computing security: Threats and mitigation strategies,2021,v1 include (STU-07),Y,tbc,general cloud-security SLR: check whether TI/AB contains Facet A terms; otherwise Stream 2 decision
+GS-08,10.1016/j.cose.2025.104599,"Security and privacy in multi-cloud and hybrid cloud environments: Challenges, strategies, and future directions",2025,v1 include (STU-08),Y,tbc,check against v2 eligibility
+GS-09,10.1016/j.cose.2020.102030,Information security governance challenges and critical success factors: Systematic review,2020,v1 include (STU-09),N,tbc,found by citation tracking in v1; no multi-cloud terms. Exclude from the database-recall denominator (snowballing target)
+GS-10,10.1007/978-3-030-79186-5_13,Reference service model for federated identity management,2021,v1 include (STU-10),N,tbc,found by citation tracking in v1; no multi-cloud terms. Exclude from the database-recall denominator (snowballing target)

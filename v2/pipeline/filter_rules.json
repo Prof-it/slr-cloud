@@ -1,0 +1,11 @@
+{
+  "_comment": "Rule-based exclusions applied after deduplication. Each rule id appears in 03_excluded_by_rule.csv and in the PRISMA box 'marked as ineligible by automation tools'. First matching rule wins. Set year max to the search year once the date window is decided (protocol section 1).",
+  "rules": [
+    {"id": "F-YEAR", "field": "year", "kind": "year_range", "min": 2020, "max": 2026, "missing": "keep"},
+    {"id": "F-RETRACT", "field": "retracted", "kind": "exclude_regex", "pattern": "^(true|yes|1)$"},
+    {"id": "F-TYPE", "field": "doc_type", "kind": "exclude_regex",
+     "pattern": "editorial|erratum|correction|retraction|book review|letter|news|magazine|trade publication|front matter|back matter|table of contents|patent|dissertation|thesis|\\bbook\\b(?! chapter)|paratext|peer-review"},
+    {"id": "F-LANG", "field": "language", "kind": "require_regex", "pattern": "^(en|eng|english)", "missing": "keep"},
+    {"id": "F-NOTITLE", "field": "title", "kind": "require_regex", "pattern": "\\w{3,}", "missing": "exclude"}
+  ]
+}

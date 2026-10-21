@@ -1,0 +1,1 @@
+run_id,date,interface,variant,exact_string,filters,hits,after_dedup,after_rules,gold_found,gold_total,recall,notes

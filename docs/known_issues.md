@@ -18,8 +18,10 @@ be resolved in the journal extension, not by editing v1 records.
    (1,818 -> 1,599). EBSCO indexes IEEE Xplore (`edseee`), Springer and other
    publisher content; an approximate normalised-title match finds overlaps of
    EBSCO with SpringerLink (~83), IEEE Xplore (~21), ScienceDirect (~6) and
-   ACM DL (~5). A statement that all duplicates were EBSCO-internal (used in an
-   early journal draft) is therefore not supported. **[v2]** Deduplicate
+   ACM DL (~5). In addition, the v2 pipeline finds 122 exact title+year
+   duplicates *within* the archived 777-record EBSCO export, so that export is
+   not fully deduplicated either. A statement that all duplicates were
+   EBSCO-internal (used in an early journal draft) is therefore not supported. **[v2]** Deduplicate
    across all exports by DOI/title with a logged script.
 4. **Reported vs. executed query.** ETECOM Sec. III-A reports a simplified
    conceptual Boolean structure; the executed strings (search_history.xlsx)

@@ -75,6 +75,7 @@ retrieve them. Choose one of:
 
 Option 2 matches the paper's cross-framework claim. Option 1 gives the
 smaller screening set. Either is defensible if stated a priori.
+-> We agree on option 2. 
 
 ## 3. Search-string variants for the pilot
 

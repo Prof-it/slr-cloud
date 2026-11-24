@@ -16,100 +16,67 @@ ask. Do not improvise around the protocol.
 
 ---
 
-## 0. Project plan: order and dependencies
+## 0. Project plan
 
-The arrows are fixed: a step starts only when every step pointing to it is
-done. The dates are targets and may move; if a gate fails, everything after it
-moves, not just the gate. Colours: blue = TL, green = SS, amber = SHK-A,
-purple = SHK-A and SS together (independently), grey = external, red = gate.
+The order of the steps is fixed; the dates are targets and may move. If a
+gate fails, everything after it moves. Owners: **TL** lead, **SS** Sahel,
+**SHK** student assistant.
 
 ```mermaid
-flowchart TD
-  classDef tl fill:#dbeafe,stroke:#1d4ed8,color:#0b1f4d
-  classDef ss fill:#dcfce7,stroke:#15803d,color:#0b3d1c
-  classDef shk fill:#fef3c7,stroke:#b45309,color:#4a2a05
-  classDef both fill:#ede9fe,stroke:#6d28d9,color:#2e1065
-  classDef gate fill:#fee2e2,stroke:#b91c1c,color:#4c0b0b
-  classDef ext fill:#f3f4f6,stroke:#6b7280,color:#111827
-
-  subgraph A["Phase A - Prepare (target 28 Nov)"]
-    A1["TL: decide open protocol points<br/>databases, date window, V3, Stream 2 string"]
-    A2["SS: Task G gold set<br/>both streams, blind to strings"]
-    A3["TL: SS agreement on roles and author order"]
-    A4["Pool admin: SHK-A confirmed"]
-    A5["TL: freeze and register search protocol (OSF)"]
-  end
-  subgraph B["Phase B - Search (target 2 Dec)"]
-    B1["SHK-A: Tasks S+P pilot variants<br/>recall per stream"]
-    G1{"Gate 1: recall >= 0.90<br/>per stream"}
-    B2["SHK-A: final run, pipeline,<br/>snowballing (TL)"]
-  end
-  subgraph C["Phase C - Screening (target 11 Dec)"]
-    C1["SHK-A: T1 title/abstract (S1)"]
-    C2["TL: draw blind sample"]
-    C3["SS: T2 sample (S2)"]
-    C4["SHK-A R1 + SS R2: Task F<br/>full text + quality, independent"]
-    G2{"Gate 2: included set final<br/>11 Dec, else submit in January"}
-  end
-  subgraph D["Phase D - Coding (target 20 Dec)"]
-    D0["TL: freeze codebook v2"]
-    D1["TL: term counts + coding forms"]
-    D2["TL + SHK-A + SS: calibration (2 h)"]
-    D3["SHK-A C1 + SS C2: independent coding"]
-    G3{"Gate 3: alpha >= 0.667"}
-    D4["TL: adjudication log, gap rule,<br/>tables, figures"]
-    D5["TL: Task L LLM robustness pass"]
-  end
-  subgraph E["Phase E - Manuscript and submission (target 31 Dec)"]
-    E1["TL: Intro, Related Work, Methods<br/>(start now, in parallel)"]
-    E2["TL: Results, Discussion from v2 outputs"]
-    E3["SS: review full draft"]
-    E4["TL: cover letter, Zenodo release,<br/>purge publisher PDFs"]
-    E5(["Submit to JCC"])
-  end
-
-  A1 --> A5
-  A2 --> B1
-  A5 --> B1
-  A4 --> B1
-  B1 --> G1
-  G1 -->|"pass"| B2
-  G1 -->|"fail: add synonym or database"| B1
-  B2 --> C1 --> C2 --> C3 --> C4 --> G2
-  D0 --> D2
-  G2 --> D1 --> D2 --> D3 --> G3
-  G3 -->|"pass"| D4
-  G3 -->|"fail: revise rules once, recode sample"| D3
-  D3 --> D5
-  D4 --> E2
-  D5 --> E2
-  A5 --> E1
-  E1 --> E2 --> E3 --> E4 --> E5
-  A3 --> E5
-
-  class A1,A3,A5,C2,D0,D1,D4,D5,E1,E2,E4 tl
-  class A2,C3,E3 ss
-  class B1,B2,C1 shk
-  class C4,D2,D3 both
-  class G1,G2,G3 gate
-  class A4 ext
+flowchart LR
+  P["1 Prepare<br/>SS: gold set<br/>TL: freeze protocol"]
+  S["2 Search<br/>TL: pilot, final run"]
+  T["3 Screen<br/>SHK: all records<br/>TL: blind sample"]
+  F["4 Full text<br/>SHK + SS"]
+  C["5 Code<br/>SHK + SS"]
+  W["6 Write + submit<br/>TL: draft<br/>SS: approve"]
+  G1{"recall<br/>≥ 0.90"}
+  G2{"set final<br/>by 11 Dec?"}
+  G3{"α ≥ 0.667"}
+  X["TL in parallel: codebook freeze,<br/>Intro / Methods draft, authorship"]
+  P --> S --> G1 --> T --> F --> G2 --> C --> G3 --> W
+  X -.-> C
+  X -.-> W
 ```
 
-Critical path: gold set and protocol freeze -> pilot -> screening -> full text
--> coding -> results -> review -> submission. Steps TL can do off the critical
-path: decide the open protocol points and freeze the codebook (both before
-coding), draft Intro, Related Work and Methods, and settle authorship.
+| Step | What | Who | Hours (≈20 sources) | Needs | Target |
+|---|---|---|---|---|---|
+| 1 | Gold set (Task G) | SS | 5 | — | 28 Nov |
+| 1 | Decide open protocol points; freeze and register protocol | TL | 2 | — | 28 Nov |
+| 2 | Pilot variants, recall per stream; final run, pipeline, snowballing (Tasks S, P) | TL | 4 | 1 | 2 Dec |
+| — | **Gate 1:** recall ≥ 0.90 per stream, else add synonym/database and rerun step 2 | TL | — | 2 | 2 Dec |
+| 3 | First title/abstract screening of all records (Task T1) | SHK | 4–6 | Gate 1 | 6 Dec |
+| 3 | Blind second screening of the sample (Task T2) | TL | 3–4 | T1 | 6 Dec |
+| 4 | Full-text eligibility + quality, independently (Task F) | SHK, SS | 4 each | 3 | 11 Dec |
+| — | **Gate 2:** included set final by 11 Dec, else submit in January | TL | — | 4 | 11 Dec |
+| 5 | Codebook frozen; term counts, coding forms | TL | 2 | Gate 2 | 12 Dec |
+| 5 | Calibration (2 h) + split coding (Task C) | SHK, SS | ~11 each | forms | 20 Dec |
+| — | **Gate 3:** α ≥ 0.667, else revise rules once and recode a sample | TL | — | 5 | 20 Dec |
+| 5 | Adjudication, gap rule, tables, figures; LLM pass (Task L) | TL | 6 | Gate 3 | 22 Dec |
+| 6 | Intro, Related Work, Methods (start now) | TL | — | 1 | 20 Dec |
+| 6 | Results, Discussion; cover letter, Zenodo, purge PDFs | TL | — | 5 | 28 Dec |
+| 6 | Approve final manuscript | SS | 1 | 6 | 30 Dec |
+| 6 | Submit to JCC | TL | — | all | 31 Dec |
+
+Expected totals: **SHK ≈ 20–22 h** (plus 1 h setup), **SS ≈ 21 h**. Hours
+for screening and coding scale with the record and source counts: about
+20–30 s per title/abstract and 8–10 min per coded cell. If more than 25
+sources are included, the double-coded share drops from 30 % to 25 %
+(codebook §9) so that the hours stay the same.
 
 ## 1. Roles
 
 | Role | Who | Tasks in this README |
 |---|---|---|
-| **Lead (TL)** | Prof. Dr. Tianxiang Lu | First and corresponding author. Owns the protocol and codebook; decides open questions; approves the gold set; draws the second-screener sample; issues coding forms and term counts; **adjudicates** screening, full-text and coding disagreements (does not code) |
-| **Co-author (SS)** | Sahel Sabazadeh | Task G (gold set), Task T2 as screener **S2**, Task F as reviewer **R2**, Task C as coder **C2**, Task W (manuscript review) |
-| **SHK-A** | Student assistant A | Task S (search), Task P (processing), Task T1 as screener **S1**, Task F as reviewer **R1**, Task C as coder **C1** |
+| **Lead (TL)** | Prof. Dr. Tianxiang Lu | First and corresponding author. Owns the protocol and codebook; decides open questions; approves the gold set; runs the searches and the pipeline (Tasks S, P); screens the blind sample as **S2** (Task T2); issues coding forms and term counts; **adjudicates** screening, full-text and coding disagreements (does not code) |
+| **Co-author (SS)** | Sahel Sabazadeh | Task G (gold set), Task F as reviewer **R2**, Task C as coder **C2**, approval of the final manuscript |
+| **SHK-A** | Student assistant A | Task T1 as screener **S1**, Task F as reviewer **R1**, Task C as coder **C1** |
 
 **Coders and adjudication.** SHK-A (C1) and SS (C2) code independently and
-blind to each other; TL adjudicates as a non-coder. Every resolution is logged
+blind to each other; TL adjudicates as a non-coder. Coding is split
+(codebook §9): the three principal frameworks and a fixed random 30 % of the
+study cells are coded by both; the remaining study cells are divided evenly
+and coded by one coder each. Every resolution is logged
 in `v2/coding/adjudication_log.csv`
 (`cell_id, C1, C2, final, rule_applied, resolved_by, note`).
 
@@ -135,21 +102,8 @@ with TL.
 **Library access:** SS and SHK-A both have EBSCO access (Tasks S and P).
 Tasks F and C need the licensed full-text PDFs (ground rule 6).
 
-Estimated effort:
+Hours and target dates: see the plan and timetable in section 0.
 
-| Task | Who | Hours |
-|---|---|---|
-| Setup (section 3) | SS, SHK-A | 1 each |
-| G: gold set | SS | 5 |
-| S + P: search runs and processing | SHK-A | 5 |
-| T1: first title/abstract screening | SHK-A | 6–14 (depends on the final record count) |
-| T2: second screening (sample) | SS | 4–6 |
-| F: full-text eligibility + quality scores | SHK-A (R1), SS (R2); TL adjudicates | 3–5 each |
-| C: coding (incl. 2 h calibration) | SHK-A (C1), SS (C2); TL adjudicates | about 20 each |
-| L: LLM robustness pass | TL (run), Claude via API | 2 |
-| W: manuscript | TL drafts; SS reviews (author work, not SHK hours) | — |
-
-Target dates: see the plan in section 0.
 
 ## 2. Ground rules (apply to everyone)
 
@@ -202,7 +156,7 @@ repository folder.
 
 **Naming rules used throughout:**
 - **Run ID:** `<date>_EBSCO_<variant>`, with the date as YYYY-MM-DD and the variant from protocol §3 (`V1`, `V1b`, `V2`, `V3`). Example: `2026-11-16_EBSCO_V2`.
-- **Screener and coder IDs:** `S1` (SHK-A), `S2` (SS), `R1`/`R2` (SHK-A/SS), `C1` (SHK-A), `C2` (SS).
+- **Screener and coder IDs:** `S1` (SHK-A), `S2` (TL), `R1`/`R2` (SHK-A/SS), `C1` (SHK-A), `C2` (SS).
 
 ---
 
@@ -228,14 +182,14 @@ reported per stream.
 3. Add each paper as a row in `v2/search/gold_candidates.csv` with the columns
    of `protocol/gold_set.csv`: `doi`, `title`, `year`, `gold_source` (for
    example "cited in Ali 2025" or "JCC scan"), and in `notes` the stream:
-   `S1` (multi-cloud) or `S2` (framework comparison).
+   `ST1` (multi-cloud) or `ST2` (framework comparison).
 4. Target: 15–25 papers in total, including the existing 10, with at least
    5 per stream (the existing 10 contain about 6 for Stream 1 and 3–4 for
    Stream 2). Commit and open a
    pull request "Gold set candidates". TL reviews the list and copies the
    accepted rows into `protocol/gold_set.csv`.
 
-## Task S — Run a search variant (SHK-A)
+## Task S — Run a search variant (TL; written so it can be delegated)
 
 **Read first:** `v2/protocol/search_protocol_v2.md`, §§1–3.
 
@@ -266,7 +220,7 @@ reported per stream.
 
    Leave the other columns empty; they are filled in by Task P.
 
-## Task P — Process a run with the pipeline (SHK-A)
+## Task P — Process a run with the pipeline (TL; written so it can be delegated)
 
 From the repository folder, with `.venv` active. Replace `<run ID>` with your
 run ID throughout:
@@ -359,9 +313,11 @@ computer; no data is uploaded.
 7. Commit both files on your branch and open a pull request
    "Screening S1 <final run ID>".
 
-## Task T2 — Second screening of a sample (SS, screener S2)
+## Task T2 — Second screening of a sample (TL, screener S2)
 
-TL creates your sample from S1's results. Do not look at S1's file:
+The sample is drawn from S1's results with a fixed seed. TL runs the command
+but opens only the sample file, never S1's file or the answer key, before his
+own decisions are saved:
 
 ```bash
 # run by TL only
@@ -384,8 +340,9 @@ the records S1 did not screen. You are not told which is which.
 3. Commit it on your branch and open a pull request
    "Screening S2 <final run ID>".
 
-TL then compares S1 and S2 and resolves disagreements. You may be asked to
-explain individual decisions.
+TL then compares S1 and S2. A record that either screener included goes
+to full text (Task F), so title/abstract disagreements need no adjudication;
+the agreement is reported.
 
 ---
 
@@ -400,6 +357,11 @@ version is frozen; code only with that version.
 - your personal coding form `form_<your coder ID>.xlsx`.
 
 You do **not** need the repository for this task.
+
+**Your cells.** Your form contains only the cells assigned to you: all cells
+of the three principal frameworks, the double-coded random 30 % of the study
+cells, and your half of the remaining study cells (codebook §9). You are not
+told which cells the other coder also codes.
 
 **Calibration (about 2 h, together with TL and the other coder).** Two
 sources are coded jointly to align your understanding of the rules. These

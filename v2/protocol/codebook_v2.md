@@ -130,7 +130,7 @@ supported only by (1), without literature evidence, are labelled
 ## 9. Coding procedure and reliability
 
 1. **Calibration:** both coders and the adjudicator code 2 sources (1 framework, 1 study) jointly. These cells are excluded from agreement statistics. Rules are clarified and the codebook is frozen.
-2. **Independent coding:** ≥2 coders code all remaining cells blind to each other and to v1 ratings, using the coding form (`coding_form_v2.xlsx`).
+2. **Independent coding:** ≥2 coders code all remaining cells blind to each other and without consulting v1 ratings, using the coding form (`coding_form_v2.xlsx`). C2 (SS) produced the v1 coding; the safeguards and the pre-specified anchoring check are in `v2/README.md` §1 and are reported as a limitation.
 3. **Agreement:** computed per scale on cells. Report Krippendorff's α (ordinal) for G and M separately, percent agreement, and Gwet's AC1. Report κ only alongside AC1, given skewed categories. Aspects use per-code agreement (Jaccard).
 4. **Threshold:** α ≥ 0.667 to proceed. Below that, revise rules once, re-code a fresh sample, and report both rounds.
 5. **Adjudication:** the adjudicator (TL, non-coder) resolves disagreements; each resolution is logged with the rule applied.
@@ -140,3 +140,4 @@ supported only by (1), without literature evidence, are labelled
 | Version | Date | Change | By |
 |---|---|---|---|
 | v2.0-draft | 2026-10-20 | Initial draft from v1 audit (A01–A17) | Drafted for TL |
+| v2.0-draft | 2026-11-24 | §9.2: coders C1 = SHK-A, C2 = SS (v1 coder, safeguards in v2/README §1); TL adjudicates as non-coder | TL |

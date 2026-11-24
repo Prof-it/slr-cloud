@@ -52,7 +52,7 @@ log variant V1b).
 OR "Cloud Controls Matrix" OR "CSA" OR framework* OR standard*
 ```
 
-### 2a. Scope decision: second literature stream (decide before the pilot)
+### 2a. Scope decision: second literature stream (decided: Option 2)
 
 Several v1 includes are **not** multi-cloud studies; they are cloud security
 **framework comparisons**: Hegde et al. 2023, Aljarrah et al. 2024, and
@@ -75,7 +75,7 @@ retrieve them. Choose one of:
 
 Option 2 matches the paper's cross-framework claim. Option 1 gives the
 smaller screening set. Either is defensible if stated a priori.
--> We agree on option 2. 
+**Decision (TL, SS; recorded in commit 3beaf78, Oct 2026): Option 2.** Framework comparisons in a cloud context are included without a multi-cloud focus, keeping the v1 scope and extending it. Recall is reported per stream.
 
 ## 3. Search-string variants for the pilot
 

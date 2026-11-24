@@ -16,37 +16,124 @@ ask. Do not improvise around the protocol.
 
 ---
 
+## 0. Project plan: order and dependencies
+
+The arrows are fixed: a step starts only when every step pointing to it is
+done. The dates are targets and may move; if a gate fails, everything after it
+moves, not just the gate. Colours: blue = TL, green = SS, amber = SHK-A,
+purple = SHK-A and SS together (independently), grey = external, red = gate.
+
+```mermaid
+flowchart TD
+  classDef tl fill:#dbeafe,stroke:#1d4ed8,color:#0b1f4d
+  classDef ss fill:#dcfce7,stroke:#15803d,color:#0b3d1c
+  classDef shk fill:#fef3c7,stroke:#b45309,color:#4a2a05
+  classDef both fill:#ede9fe,stroke:#6d28d9,color:#2e1065
+  classDef gate fill:#fee2e2,stroke:#b91c1c,color:#4c0b0b
+  classDef ext fill:#f3f4f6,stroke:#6b7280,color:#111827
+
+  subgraph A["Phase A - Prepare (target 28 Nov)"]
+    A1["TL: decide open protocol points<br/>databases, date window, V3, Stream 2 string"]
+    A2["SS: Task G gold set<br/>both streams, blind to strings"]
+    A3["TL: SS agreement on roles and author order"]
+    A4["Pool admin: SHK-A confirmed"]
+    A5["TL: freeze and register search protocol (OSF)"]
+  end
+  subgraph B["Phase B - Search (target 2 Dec)"]
+    B1["SHK-A: Tasks S+P pilot variants<br/>recall per stream"]
+    G1{"Gate 1: recall >= 0.90<br/>per stream"}
+    B2["SHK-A: final run, pipeline,<br/>snowballing (TL)"]
+  end
+  subgraph C["Phase C - Screening (target 11 Dec)"]
+    C1["SHK-A: T1 title/abstract (S1)"]
+    C2["TL: draw blind sample"]
+    C3["SS: T2 sample (S2)"]
+    C4["SHK-A R1 + SS R2: Task F<br/>full text + quality, independent"]
+    G2{"Gate 2: included set final<br/>11 Dec, else submit in January"}
+  end
+  subgraph D["Phase D - Coding (target 20 Dec)"]
+    D0["TL: freeze codebook v2"]
+    D1["TL: term counts + coding forms"]
+    D2["TL + SHK-A + SS: calibration (2 h)"]
+    D3["SHK-A C1 + SS C2: independent coding"]
+    G3{"Gate 3: alpha >= 0.667"}
+    D4["TL: adjudication log, gap rule,<br/>tables, figures"]
+    D5["TL: Task L LLM robustness pass"]
+  end
+  subgraph E["Phase E - Manuscript and submission (target 31 Dec)"]
+    E1["TL: Intro, Related Work, Methods<br/>(start now, in parallel)"]
+    E2["TL: Results, Discussion from v2 outputs"]
+    E3["SS: review full draft"]
+    E4["TL: cover letter, Zenodo release,<br/>purge publisher PDFs"]
+    E5(["Submit to JCC"])
+  end
+
+  A1 --> A5
+  A2 --> B1
+  A5 --> B1
+  A4 --> B1
+  B1 --> G1
+  G1 -->|"pass"| B2
+  G1 -->|"fail: add synonym or database"| B1
+  B2 --> C1 --> C2 --> C3 --> C4 --> G2
+  D0 --> D2
+  G2 --> D1 --> D2 --> D3 --> G3
+  G3 -->|"pass"| D4
+  G3 -->|"fail: revise rules once, recode sample"| D3
+  D3 --> D5
+  D4 --> E2
+  D5 --> E2
+  A5 --> E1
+  E1 --> E2 --> E3 --> E4 --> E5
+  A3 --> E5
+
+  class A1,A3,A5,C2,D0,D1,D4,D5,E1,E2,E4 tl
+  class A2,C3,E3 ss
+  class B1,B2,C1 shk
+  class C4,D2,D3 both
+  class G1,G2,G3 gate
+  class A4 ext
+```
+
+Critical path: gold set and protocol freeze -> pilot -> screening -> full text
+-> coding -> results -> review -> submission. Steps TL can do off the critical
+path: decide the open protocol points and freeze the codebook (both before
+coding), draft Intro, Related Work and Methods, and settle authorship.
+
 ## 1. Roles
 
 | Role | Who | Tasks in this README |
 |---|---|---|
-| **Lead (TL)** | Prof. Dr. Tianxiang Lu | Owns the protocol and codebook; decides open questions; approves the gold set; full-text eligibility (Task F); draws the second-screener sample; issues coding forms and term counts; Task C as coder **C2**; resolves disagreements with C1 (see below) |
-| **First author (SS)** | Sahel Sabazadeh | Task G (gold set), Task T2 as screener **S2**, Task F as second reviewer for *new* records, Task W (writing). **Does not code (Task C)** — see note below |
-| **SHK-A** | Student assistant A | Task S (search), Task P (processing), Task T1 as screener **S1**, Task F as second reviewer for *v1* records, Task C as coder **C1** |
+| **Lead (TL)** | Prof. Dr. Tianxiang Lu | First and corresponding author. Owns the protocol and codebook; decides open questions; approves the gold set; draws the second-screener sample; issues coding forms and term counts; **adjudicates** screening, full-text and coding disagreements (does not code) |
+| **Co-author (SS)** | Sahel Sabazadeh | Task G (gold set), Task T2 as screener **S2**, Task F as reviewer **R2**, Task C as coder **C2**, Task W (manuscript review) |
+| **SHK-A** | Student assistant A | Task S (search), Task P (processing), Task T1 as screener **S1**, Task F as reviewer **R1**, Task C as coder **C1** |
 
-**Why SS does not code.** SS produced the v1 coding. Her v2 ratings would not
-be independent of v1, which ground rule 4 requires, and a reviewer could read
-them as a re-rating of her own judgements. For the same reason, the v1
-includes (STU-01..10) are re-judged at full text by TL and SHK-A, not by SS.
+**Coders and adjudication.** SHK-A (C1) and SS (C2) code independently and
+blind to each other; TL adjudicates as a non-coder. Every resolution is logged
+in `v2/coding/adjudication_log.csv`
+(`cell_id, C1, C2, final, rule_applied, resolved_by, note`).
 
-**Second coder and adjudication.** No second student assistant is available,
-so TL codes as C2, blind to C1. Disagreements are resolved by consensus between
-C1 and TL. If they do not agree, SS decides, but only after TL has received both
-coding forms. Every resolution is logged in `v2/coding/adjudication_log.csv`
-(`cell_id, C1, C2, final, rule_applied, resolved_by, note`). The paper reports
-that the adjudicator was also a coder. If a second student assistant becomes
-available before coding starts, they take the C2 role and TL adjudicates as a
-non-coder.
+**SS's v1 exposure.** SS produced the v1 coding. This does not inflate
+agreement (α is computed against SHK-A, who has not seen v1), but it could carry
+v1 judgements into v2. Safeguards:
+1. SS codes from the frozen codebook and the PDFs only, without opening the v1
+   workbook, `03_coding/`, `05_synthesis/`, `docs/known_issues.md` or the
+   ETECOM tables (ground rule 4).
+2. Every rating needs a quote with PDF page or a logged term search (codebook §6),
+   so carried-over judgements are auditable.
+3. Pre-specified anchoring check: TL tabulates SS's v2 ratings against the v1
+   ratings for the same cells and compares this with SHK-A's ratings. A
+   markedly closer fit for SS than for SHK-A is reported as possible
+   anchoring.
+4. The paper states SS's v1 exposure as a limitation.
 
 **LLM robustness pass (Task L).** An LLM codes all cells once, as a
 sensitivity check. It does not count as a coder, does not enter α, and does not
 influence adjudication. Nobody looks at its output before both human forms are
 with TL.
 
-**Library access:** Tasks S and P need IU library access (EBSCO, IEEE Xplore).
-Task F and Task C need the licensed full-text PDFs (ground rule 6). If SS no
-longer has IU access after graduating, SHK-A or TL runs S/P, and SS does Task F
-only for open-access records.
+**Library access:** SS and SHK-A both have EBSCO access (Tasks S and P).
+Tasks F and C need the licensed full-text PDFs (ground rule 6).
 
 Estimated effort:
 
@@ -57,12 +144,12 @@ Estimated effort:
 | S + P: search runs and processing | SHK-A | 5 |
 | T1: first title/abstract screening | SHK-A | 6–14 (depends on the final record count) |
 | T2: second screening (sample) | SS | 4–6 |
-| F: full-text eligibility + quality scores | TL with SHK-A (v1 records), TL with SS (new records) | 3–5 each |
-| C: coding (incl. 2 h calibration) | SHK-A (C1), TL (C2) | about 20 each |
+| F: full-text eligibility + quality scores | SHK-A (R1), SS (R2); TL adjudicates | 3–5 each |
+| C: coding (incl. 2 h calibration) | SHK-A (C1), SS (C2); TL adjudicates | about 20 each |
 | L: LLM robustness pass | TL (run), Claude via API | 2 |
-| W: writing | SS (author work, not SHK hours) | as agreed |
+| W: manuscript | TL drafts; SS reviews (author work, not SHK hours) | — |
 
-Dates: G by 28 Nov; S/P by 1 Dec; T1/T2 by 6 Dec; F by 11 Dec; C by 20 Dec; L after both forms are in.
+Target dates: see the plan in section 0.
 
 ## 2. Ground rules (apply to everyone)
 
@@ -81,10 +168,9 @@ Dates: G by 28 Nov; S/P by 1 Dec; T1/T2 by 6 Dec; F by 11 Dec; C by 20 Dec; L af
    - the ETECOM paper's tables;
    - the other coder's form.
 
-   SS takes no part in coding, calibration or adjudication discussions until
-   both coding forms have been received by TL. As C2, TL does not open C1's
-   form, the v1 coding or any LLM output (Task L) before his own form is
-   complete and saved as `form_C2_done.xlsx`.
+   This applies to SS as well, although she produced the v1 coding (see the
+   safeguards in section 1). Nobody opens any LLM output (Task L) before both
+   coding forms are with TL.
 5. **Log everything.** The pipeline logs automatically. Manual steps are logged
    in the files named in each task.
 6. **Do not share full-text PDFs** outside the project. Many are licensed to
@@ -116,27 +202,36 @@ repository folder.
 
 **Naming rules used throughout:**
 - **Run ID:** `<date>_EBSCO_<variant>`, with the date as YYYY-MM-DD and the variant from protocol §3 (`V1`, `V1b`, `V2`, `V3`). Example: `2026-11-16_EBSCO_V2`.
-- **Screener and coder IDs:** `S1` (SHK-A), `S2` (SS), `C1` (SHK-A), `C2` (TL).
+- **Screener and coder IDs:** `S1` (SHK-A), `S2` (SS), `R1`/`R2` (SHK-A/SS), `C1` (SHK-A), `C2` (SS).
 
 ---
 
 ## Task G — Build the gold set (SS)
 
-**Read first:** `v2/protocol/search_protocol_v2.md`, §§2a and 4. Do this
-**before** any search variant is run, and do not look at the search strings
-while selecting papers. The gold set must be independent of the strings.
+**Read first:** the eligibility criteria in Task T1, step 3, and
+`v2/protocol/search_protocol_v2.md` §4 (recall validation) only. Do this
+**before** any search variant is run. Do not read protocol §§2–3, which contain
+the search strings: the gold set must be independent of them.
+
+The scope covers two streams (protocol §2a, Option 2, agreed): **Stream 1**,
+multi-cloud governance studies, and **Stream 2**, comparisons of cloud security
+or governance frameworks (e.g. ISO/IEC 27001, NIST CSF, CSA CCM) even without a
+multi-cloud focus. The gold set needs papers from both, because recall is
+reported per stream.
 
 1. From the reference lists of Diningrat et al. 2025, Ali et al. 2025 and
    Alouffi et al. 2021, collect primary studies published from 2020 onwards
    that meet the Task T1 inclusion criteria.
 2. Scan the 2020–2026 issues and proceedings of Journal of Cloud Computing,
-   IEEE CLOUD and Computers & Security for multi-cloud governance papers that
+   IEEE CLOUD and Computers & Security for papers of either stream that
    meet the same criteria.
 3. Add each paper as a row in `v2/search/gold_candidates.csv` with the columns
    of `protocol/gold_set.csv`: `doi`, `title`, `year`, `gold_source` (for
    example "cited in Ali 2025" or "JCC scan"), and in `notes` the stream:
    `S1` (multi-cloud) or `S2` (framework comparison).
-4. Target: 15–25 papers in total, including the existing 10. Commit and open a
+4. Target: 15–25 papers in total, including the existing 10, with at least
+   5 per stream (the existing 10 contain about 6 for Stream 1 and 3–4 for
+   Stream 2). Commit and open a
    pull request "Gold set candidates". TL reviews the list and copies the
    accepted rows into `protocol/gold_set.csv`.
 
@@ -343,12 +438,11 @@ TL confirms receipt of both forms. Do not look at the earlier (v1) coding
 
 ---
 
-## Task F — Full-text eligibility and quality scores (TL + second reviewer)
+## Task F — Full-text eligibility and quality scores (R1 = SHK-A, R2 = SS)
 
-Two reviewers decide each full text independently:
-- **v1 records** (STU-01..10 and the six v1 full-text exclusions, if retrieved
-  again): TL and SHK-A;
-- **all other records:** TL and SS.
+R1 and R2 decide every full text independently, including the v1 studies;
+TL adjudicates. SS judges the v1 studies from the full text and the criteria,
+not from her v1 decisions.
 
 For each record, enter in `v2/screening/<final run ID>_FT_<your ID>.csv`:
 `record_id`, `decision` (include / exclude), `reason` (codes as in Task T2),
@@ -357,25 +451,12 @@ threshold 6/10). Decide on the full text; do not discuss with the other
 reviewer until TL has both files. TL logs every disagreement and its
 resolution.
 
-## Task W — Writing (SS)
+## Task W — Manuscript (TL drafts, SS reviews)
 
-Start once the gold set is delivered. Draft in the manuscript (TL shares the
-OneDrive copy):
-
-1. Rewrite every passage reused from the ETECOM 2026 paper in new wording.
-   Text and figures from the IEEE paper cannot appear verbatim in the open-
-   access journal article.
-2. Update Related Work with the new included studies once Task F is final.
-3. Write the subsection "Changes from the conference version": new search,
-   dual screening, codebook v2 (G/M), inter-rater agreement, explicit gap rule,
-   and why each change was made.
-4. Redraw the PRISMA flow diagram from the counts printed by
-   `slr_pipeline.py prisma` for the final run.
-5. After adjudication, draft the discussion of the gap taxonomy from the
-   gap-rule output.
-
-Also send TL: written consent to the journal version and author order, your
-ORCID, CRediT roles, and a contact e-mail that stays valid after graduation.
+TL redrafts the manuscript from the v2 outputs, building on SS's earlier draft
+(passages from the ETECOM 2026 paper are rewritten, because the IEEE text and
+figures cannot appear verbatim in the open-access article). SS reviews the
+full draft around 22–28 December and approves the final version.
 
 ## Task L — LLM robustness pass (TL)
 

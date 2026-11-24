@@ -20,22 +20,49 @@ ask. Do not improvise around the protocol.
 
 | Role | Who | Tasks in this README |
 |---|---|---|
-| **Lead (TL)** | Prof. Dr. Tianxiang Lu | Owns the protocol and codebook; decides open questions; maintains the gold set; full-text eligibility; draws the second-screener sample; issues coding forms; resolves disagreements |
-| **SHK-A** | Student assistant A | Task S (search), Task P (processing), Task T1 (first screening), Task C as coder **C1** |
-| **SHK-B** | Student assistant B | Task T2 (second screening), Task C as coder **C2** |
+| **Lead (TL)** | Prof. Dr. Tianxiang Lu | Owns the protocol and codebook; decides open questions; approves the gold set; full-text eligibility (Task F); draws the second-screener sample; issues coding forms and term counts; Task C as coder **C2**; resolves disagreements with C1 (see below) |
+| **First author (SS)** | Sahel Sabazadeh | Task G (gold set), Task T2 as screener **S2**, Task F as second reviewer for *new* records, Task W (writing). **Does not code (Task C)** — see note below |
+| **SHK-A** | Student assistant A | Task S (search), Task P (processing), Task T1 as screener **S1**, Task F as second reviewer for *v1* records, Task C as coder **C1** |
 
-If only one student assistant is assigned, they do SHK-A's tasks. Task T2 is
-then done by a person named by TL.
+**Why SS does not code.** SS produced the v1 coding. Her v2 ratings would not
+be independent of v1, which ground rule 4 requires, and a reviewer could read
+them as a re-rating of her own judgements. For the same reason, the v1
+includes (STU-01..10) are re-judged at full text by TL and SHK-A, not by SS.
 
-Estimated effort (total about 20 h per assistant):
+**Second coder and adjudication.** No second student assistant is available,
+so TL codes as C2, blind to C1. Disagreements are resolved by consensus between
+C1 and TL. If they do not agree, SS decides, but only after TL has received both
+coding forms. Every resolution is logged in `v2/coding/adjudication_log.csv`
+(`cell_id, C1, C2, final, rule_applied, resolved_by, note`). The paper reports
+that the adjudicator was also a coder. If a second student assistant becomes
+available before coding starts, they take the C2 role and TL adjudicates as a
+non-coder.
 
-| Task | Role | Hours |
+**LLM robustness pass (Task L).** An LLM codes all cells once, as a
+sensitivity check. It does not count as a coder, does not enter α, and does not
+influence adjudication. Nobody looks at its output before both human forms are
+with TL.
+
+**Library access:** Tasks S and P need IU library access (EBSCO, IEEE Xplore).
+Task F and Task C need the licensed full-text PDFs (ground rule 6). If SS no
+longer has IU access after graduating, SHK-A or TL runs S/P, and SS does Task F
+only for open-access records.
+
+Estimated effort:
+
+| Task | Who | Hours |
 |---|---|---|
-| Setup (section 3) | both | 1 |
+| Setup (section 3) | SS, SHK-A | 1 each |
+| G: gold set | SS | 5 |
 | S + P: search runs and processing | SHK-A | 5 |
-| T1: first screening | SHK-A | 14 |
-| T2: second screening (sample) | SHK-B | 4 |
-| C: coding (incl. 2 h calibration) | SHK-A, SHK-B | 14 each (can extend the request) |
+| T1: first title/abstract screening | SHK-A | 6–14 (depends on the final record count) |
+| T2: second screening (sample) | SS | 4–6 |
+| F: full-text eligibility + quality scores | TL with SHK-A (v1 records), TL with SS (new records) | 3–5 each |
+| C: coding (incl. 2 h calibration) | SHK-A (C1), TL (C2) | about 20 each |
+| L: LLM robustness pass | TL (run), Claude via API | 2 |
+| W: writing | SS (author work, not SHK hours) | as agreed |
+
+Dates: G by 28 Nov; S/P by 1 Dec; T1/T2 by 6 Dec; F by 11 Dec; C by 20 Dec; L after both forms are in.
 
 ## 2. Ground rules (apply to everyone)
 
@@ -53,6 +80,11 @@ Estimated effort (total about 20 h per assistant):
    - the top-level folders `03_coding/`, `05_synthesis/`, `docs/known_issues.md`;
    - the ETECOM paper's tables;
    - the other coder's form.
+
+   SS takes no part in coding, calibration or adjudication discussions until
+   both coding forms have been received by TL. As C2, TL does not open C1's
+   form, the v1 coding or any LLM output (Task L) before his own form is
+   complete and saved as `form_C2_done.xlsx`.
 5. **Log everything.** The pipeline logs automatically. Manual steps are logged
    in the files named in each task.
 6. **Do not share full-text PDFs** outside the project. Many are licensed to
@@ -84,9 +116,29 @@ repository folder.
 
 **Naming rules used throughout:**
 - **Run ID:** `<date>_EBSCO_<variant>`, with the date as YYYY-MM-DD and the variant from protocol §3 (`V1`, `V1b`, `V2`, `V3`). Example: `2026-11-16_EBSCO_V2`.
-- **Screener and coder IDs:** `S1` (SHK-A), `S2` (SHK-B), `C1` (SHK-A), `C2` (SHK-B).
+- **Screener and coder IDs:** `S1` (SHK-A), `S2` (SS), `C1` (SHK-A), `C2` (TL).
 
 ---
+
+## Task G — Build the gold set (SS)
+
+**Read first:** `v2/protocol/search_protocol_v2.md`, §§2a and 4. Do this
+**before** any search variant is run, and do not look at the search strings
+while selecting papers. The gold set must be independent of the strings.
+
+1. From the reference lists of Diningrat et al. 2025, Ali et al. 2025 and
+   Alouffi et al. 2021, collect primary studies published from 2020 onwards
+   that meet the Task T1 inclusion criteria.
+2. Scan the 2020–2026 issues and proceedings of Journal of Cloud Computing,
+   IEEE CLOUD and Computers & Security for multi-cloud governance papers that
+   meet the same criteria.
+3. Add each paper as a row in `v2/search/gold_candidates.csv` with the columns
+   of `protocol/gold_set.csv`: `doi`, `title`, `year`, `gold_source` (for
+   example "cited in Ali 2025" or "JCC scan"), and in `notes` the stream:
+   `S1` (multi-cloud) or `S2` (framework comparison).
+4. Target: 15–25 papers in total, including the existing 10. Commit and open a
+   pull request "Gold set candidates". TL reviews the list and copies the
+   accepted rows into `protocol/gold_set.csv`.
 
 ## Task S — Run a search variant (SHK-A)
 
@@ -182,8 +234,7 @@ computer; no data is uploaded.
      shared responsibility, risk posture/security monitoring, identity
      federation (codebook §3);
    - it addresses **two or more cloud providers** (multi-cloud, cross-cloud,
-     cloud federation). **Exception:** if protocol §2a is marked as decided for
-     *Option 2*, also include studies that compare cloud security frameworks or
+     cloud federation). **Also include** (protocol §2a, Option 2) studies that compare cloud security frameworks or
      standards (e.g. ISO/IEC 27001, NIST CSF, CSA CCM), even without a
      multi-cloud focus.
 
@@ -213,7 +264,7 @@ computer; no data is uploaded.
 7. Commit both files on your branch and open a pull request
    "Screening S1 <final run ID>".
 
-## Task T2 — Second screening of a sample (SHK-B, screener S2)
+## Task T2 — Second screening of a sample (SS, screener S2)
 
 TL creates your sample from S1's results. Do not look at S1's file:
 
@@ -273,8 +324,11 @@ cells do not count towards agreement. After calibration you code alone.
      verbatim quote of at most 50 words. The page is the **PDF page number**
      shown by your PDF viewer, not the page number printed on the paper.
    - **`term_search_terms`, `term_search_hits`:** required for G1 and M1
-     (codebook §6). Search the PDF for every listed term and record the terms
-     and the number of hits you checked.
+     (codebook §6). TL gives both coders `term_counts_by_cell.csv`, which
+     lists the hits and PDF pages for every term. Open the listed pages,
+     check the hits, and copy the terms and the number of hits you checked
+     into the two columns. The counts tell you where to look; the rating is
+     still your judgement.
    - **`rule_applied`:** the rule ID(s) you relied on, e.g. `R-M2a`.
    - **`rationale`:** one or two sentences.
    - **`status`:** `final`, or `unresolved` if you cannot decide. Explain
@@ -288,6 +342,57 @@ TL confirms receipt of both forms. Do not look at the earlier (v1) coding
 (ground rule 4).
 
 ---
+
+## Task F — Full-text eligibility and quality scores (TL + second reviewer)
+
+Two reviewers decide each full text independently:
+- **v1 records** (STU-01..10 and the six v1 full-text exclusions, if retrieved
+  again): TL and SHK-A;
+- **all other records:** TL and SS.
+
+For each record, enter in `v2/screening/<final run ID>_FT_<your ID>.csv`:
+`record_id`, `decision` (include / exclude), `reason` (codes as in Task T2),
+and the five quality scores Q1–Q5 (0–2 each, rubric in the paper's Table 4,
+threshold 6/10). Decide on the full text; do not discuss with the other
+reviewer until TL has both files. TL logs every disagreement and its
+resolution.
+
+## Task W — Writing (SS)
+
+Start once the gold set is delivered. Draft in the manuscript (TL shares the
+OneDrive copy):
+
+1. Rewrite every passage reused from the ETECOM 2026 paper in new wording.
+   Text and figures from the IEEE paper cannot appear verbatim in the open-
+   access journal article.
+2. Update Related Work with the new included studies once Task F is final.
+3. Write the subsection "Changes from the conference version": new search,
+   dual screening, codebook v2 (G/M), inter-rater agreement, explicit gap rule,
+   and why each change was made.
+4. Redraw the PRISMA flow diagram from the counts printed by
+   `slr_pipeline.py prisma` for the final run.
+5. After adjudication, draft the discussion of the gap taxonomy from the
+   gap-rule output.
+
+Also send TL: written consent to the journal version and author order, your
+ORCID, CRediT roles, and a contact e-mail that stays valid after graduation.
+
+## Task L — LLM robustness pass (TL)
+
+Run only after the codebook is frozen and both human forms are with TL.
+
+1. Script, prompt and model are fixed before the run: the frozen
+   `codebook_v2.md` is the instruction, each full-text PDF is the input, and
+   the output is one row per cell in the coding-form columns (G, M, aspects,
+   quote, pdf_page, rule_applied, rationale). Temperature 0; record the exact
+   model ID and the date.
+2. Archive the prompt, the raw responses and the parsed table in
+   `v2/coding/llm/` (PDFs stay out of git).
+3. Compare the LLM table with the **adjudicated** human result: per-scale
+   agreement (α, AC1) and a list of cells where they differ. TL checks a sample
+   of LLM quotes against the PDFs and reports quote accuracy.
+4. In the paper this is a sensitivity analysis only. No human rating is
+   changed because of it. Disclose it in the AI-use statement.
 
 ## 4. Reference: what the pipeline does
 
@@ -303,6 +408,7 @@ TL confirms receipt of both forms. Do not look at the earlier (v1) coding
 | `snowball` | DOIs of included studies | `snowball_<direction>.csv` | Backward/forward citations via OpenAlex (TL) |
 | `openalex-search` | query string | `openalex_search.csv` | Recall cross-check (TL) |
 | `coding-form` | list of included studies | `form_<coder>.xlsx` | Blank coding form per coder (TL) |
+| `term_counts.py` (separate script) | folder of included full-text PDFs | `term_counts.csv`, `term_counts_by_cell.csv` | Hits and PDF pages for the codebook §6 term lists, per study and dimension; given to both coders for G1/M1 (TL) |
 
 Every command appends one line to `run_log.jsonl` in the run folder. Do not
 edit or delete this file.

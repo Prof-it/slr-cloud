@@ -398,7 +398,8 @@ def cmd_export(a):
     with open(os.path.join(a.run, "05_screening.ris"), "w", encoding="utf-8") as f:
         for r in recs:
             f.write("TY  - JOUR\n")
-            f.write(f"ID  - {r['record_id']}\nTI  - {r.get('title','')}\n")
+            f.write(f"ID  - {r['record_id']}\nAN  - {r['record_id']}\nN1  - record_id: {r['record_id']}\n"
+                    f"TI  - {r.get('title','')}\n")
             for au in [x.strip() for x in re.split(r";", r.get("authors", "")) if x.strip()]:
                 f.write(f"AU  - {au}\n")
             for tag, k in (("PY", "year"), ("JO", "venue"), ("DO", "doi"), ("UR", "url"), ("AB", "abstract")):

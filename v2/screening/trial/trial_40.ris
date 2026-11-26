@@ -1,0 +1,557 @@
+TY  - JOUR
+ID  - EBSCO:edssjs.8C30ED9B
+AN  - EBSCO:edssjs.8C30ED9B
+N1  - record_id: EBSCO:edssjs.8C30ED9B
+TI  - Blockchain-based trust management in cloud computing systems: a taxonomy, review and future directions
+AU  - Li, Wenjuan
+AU  - Wu, Jiyi
+AU  - Cao, Jian
+AU  - Chen, Nan
+AU  - Zhang, Qifei
+AU  - Buyya, Rajkumar
+PY  - 2021
+JO  - Journal of Cloud Computing: Advances, Systems and Applications
+AB  - Through virtualization and resource integration, cloud computing has expanded its service area and offers a better user experience than the traditional platforms, along with its business operation model bringing huge economic and social benefits. However, a large amount of evidence shows that cloud computing is facing with serious security and trust crisis, and building a trust-enabled transaction environment has become its key factor. The traditional cloud trust model usually adopts a centralized architecture, which causes large management overhead, network congestion and even single point of failure. Furthermore, due to a lack of transparency and traceability, trust evaluation results cannot be fully recognized by all participants. Blockchain is a new and promising decentralized framework and distributed computing paradigm. Its unique features in operating rules and traceability of records ensure the integrity, undeniability and security of the transaction data. Therefore, blockchain is very suitable for constructing a distributed and decentralized trust architecture. This paper carries out a comprehensive survey on blockchain-based trust approaches in cloud computing systems. Based on a novel cloud-edge trust management framework and a double-blockchain structure based cloud transaction model, it identifies the open challenges and gives directions for future research in this field.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:158020098
+AN  - EBSCO:158020098
+N1  - record_id: EBSCO:158020098
+TI  - Data Encryption Technology Analysis of Robot Computer Network Information.
+AU  - Shi, Qiaolian
+AU  - Liu, Yan
+PY  - 2022
+JO  - Journal of Sensors
+AB  - In order to ensure the security of robot computer network information, a data encryption technology is proposed. Through the comprehensive research of symmetric cryptography algorithm, open cryptography algorithm, hybrid encryption algorithm, AES algorithm, quantum cryptography technology, and ECC algorithm, a data encryption method suitable for robot computer network information is proposed. It is found that when analyzing the entanglement characteristics of the four-particle cluster state, the anomaly will inevitably disturb its state. In the eavesdropping detection, the communication parties can cooperate to detect the existence of abnormal conditions. In addition, in the formal communication stage, trial photons are introduced, whose confidentiality characteristics are guaranteed by the principle of quantum noncloning and the uncertainty principle. Therefore, this technology further ensures the confidentiality of communication.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:176515714
+AN  - EBSCO:176515714
+N1  - record_id: EBSCO:176515714
+TI  - Cloud Incident Response - a Comprehensive Analysis.
+AU  - BRUMĂ, Livia Maria
+PY  - 2023
+JO  - Informatica Economica
+AB  - Data has become the most important asset for organizations because it directly influences development, performance and risk, helping to improve service, analyze customer satisfaction, maximize profit and operate effectively. In the current context of increasing cloud services utilizations and the rising number of cyber-attacks, incident response can be a significant challenge for organizations using the cloud, because the risk of being subjected to an attack is inevitable. This article provides an overview of the methods, tools, and processes that can be used to ensure effective cloud incident response. Furthermore, are presented the most specific cloud elements that introduce differences in the incident response process applied in on-premise technologies.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.11501010
+AN  - EBSCO:edseee.11501010
+N1  - record_id: EBSCO:edseee.11501010
+TI  - Zero Trust Architectures in Cloud Networks: Enhancing Security Across Global Enterprises
+AU  - Singh, Bhupendra
+AU  - Najana, Madhavi
+AU  - Prabhat, Subh
+AU  - Sharma, Nandan
+AU  - Penumarthi, Venkata
+AU  - Ranjan, Piyush
+PY  - 2025
+JO  - 2025 International Conference on Business Intelligence for Technology Innovation (ICBITI), Business Intelligence for Technology Innovation (ICBITI), 2025 International Conference on
+AB  - The growing usage of cloud computing among worldwide organizations has brought tremendous security issues, calling for a shift from the conventional perimeter-centric defenses to more effective, adaptive security models. Zero Trust Architecture (ZTA) provides an encouraging model by imposing ongoing authentication, least privilege access, and micro-segmentation to combat insider threats, unauthorized access, and data breaches. In this paper, a Zero Trust-based Security Framework (ZTSF) for cloud networks has been proposed by incorporating AI-driven identity and access management (IAM), policy-driven micro-segmentation, blockchain-secured trust mechanisms, Zero Trust Network Access (ZTNA) across multi-cloud setups, and AI-fueled threat intelligence & response. The suggested framework employs machine learning for anomaly detection, behavioral biometrics for authentication, smart contracts for compliance, and Software-Defined Perimeter (SDP) for workload isolation. It is assessed via simulation platforms like Cloud Sim or Mininet in terms of security effectiveness, latency overhead, and resource utilization. Via case studies and comparative study, we show how ZTSF enhances cloud security for businesses, making it resilient to sophisticated cyber threats and yet maintaining efficiency in operations.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:190522438
+AN  - EBSCO:190522438
+N1  - record_id: EBSCO:190522438
+TI  - Artificial Intelligence as the Next Frontier in Cyber Defense: Opportunities and Risks.
+AU  - Afolalu, Oladele
+AU  - Tsoeu, Mohohlo Samuel
+PY  - 2025
+JO  - Electronics (2079-9292)
+AB  - The limitations of conventional rule-based security systems have been exposed by the quick evolution of cyber threats, necessitating more proactive, intelligent, and flexible solutions. In cybersecurity, Artificial Intelligence (AI) has emerged as a transformative factor, offering improved threat detection, prediction, and automated response capabilities. This paper explores the advantages of using AI in strengthening cybersecurity, focusing on its applications in machine learning, Deep Learning, Natural Language Processing, and reinforcement learning. We highlight the improvement brought by AI in terms of real-time incident response, detection accuracy, scalability, and false positive reduction while processing massive datasets. Furthermore, we examine the challenges that accompany the integration of AI into cybersecurity, including adversarial attacks, data quality constraints, interpretability, and ethical implications. The study concludes by identifying potential future directions, such as integration with blockchain and IoT, Explainable AI and the implementation of autonomous security systems. By presenting a comprehensive analysis, this paper underscores exceptional potential of AI to transform cybersecurity into a field that is more robust, adaptive, and predictive.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:166107624
+AN  - EBSCO:166107624
+N1  - record_id: EBSCO:166107624
+TI  - Looming market failure in cloud computing: a new institutional economics perspective.
+AU  - Tripathy, Samit
+AU  - Sengupta, Angan
+AU  - Jyotishi, Amalendu
+PY  - 2023
+JO  - Digital Policy, Regulation & Governance
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:157019294
+AN  - EBSCO:157019294
+N1  - record_id: EBSCO:157019294
+TI  - A Formal Approach for the Identification of Authorization Policy Conflicts within Multi-Cloud Environments.
+AU  - Zahoor, Ehtesham
+AU  - Ikram, Asim
+AU  - Akhtar, Sabina
+AU  - Perrin, Olivier
+PY  - 2022
+JO  - Journal of Grid Computing
+AB  - The use of the Cloud computing has been constantly on the rise. The flexible billing model coupled with elastic resource provisioning make the Cloud appealing to consumers. However there are still many challenges associated with the Cloud limiting its adoption, such as vendor lock-in and security concerns. One way to address some of these challenges is to use services from more than one Cloud providers. This may help in avoiding the case of vendor lock-in and will also allow for the use of multiple resources available at multiple Clouds. The use of multi-cloud environments can also assist in the case of Cloud bursting where a workload in a private cloud bursts into a public cloud when the need arises. However, the security concerns in such an environment are amplified when compared to a single Cloud. In this paper we address the specification and consistency management of authorization policies in Multi-Cloud environments. The problem being address is significant as an erroneous authorization policy can have severe consequences on the security of the system being protected. In a Multi-Cloud environment, it is difficult to ensure consistency with different Clouds having authorization models, different implementations of the same authorization model and different access control policies. To this end, we have proposed a formal Event-Calculus based model to model the aggregated authorization policies from multiple Cloud providers. The translated Event-Calculus models are then reasoned upon to identify the policy conflicts. We have applied our approach on authorization policies from AWS, GCP and Microsoft Azure. Further, we have provided tool support to automate the complete verification process and provided detailed performance evaluation results to justify the practicality and scalability of the proposed approach.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.3BD8CF09
+AN  - EBSCO:edssjs.3BD8CF09
+N1  - record_id: EBSCO:edssjs.3BD8CF09
+TI  - Virtualization in Cloud Computing: Moving from Hypervisor to Containerization—A Survey
+AU  - Bhardwaj, Aditya
+AU  - Krishna, C. Rama
+PY  - 2021
+JO  - Arabian Journal for Science and Engineering
+AB  - Containers emerged as a lightweight alternative to virtual machines that offer better microservice architecture support. They are widely used by organizations to deploy their increasingly diverse workloads derived from modern applications such as big data, IoT, and edge/fog computing in either proprietary clusters or private, public cloud data centers. With the growing interest in container-based virtualization technologies, the requirement to explore the deployment and orchestration of clusters of containers has become a central research problem. Although progress has been made to study containerization, systematic consolidation of the existing literature with a summative evaluation is still missing. To fill this gap, in this paper, we first taxonomically classify the existing research studies on the performance comparison between hypervisor and container technology and then analyze state-of-the-art for container cluster management orchestration systems, its performance monitoring tools, and finally future research trends. This results in a better understanding of container technology with attention to provide summative analysis in terms of (i) how much performance overhead is generated by a hypervisor compared to container-based virtualization, (ii) which container technology is suited for a cloud application deployment based on the type of benchmark executing, (iii) how to provide management of containers deployed in a cluster environment, (iv) container performance monitoring tools, and (v) finally emerging concerns for future research directions.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:184201872
+AN  - EBSCO:184201872
+N1  - record_id: EBSCO:184201872
+TI  - Scalable Container-Based Time Synchronization for Smart Grid Data Center Networks.
+AU  - Okafor, Kennedy Chinedu
+AU  - Okafor, Wisdom Onyema
+AU  - Longe, Omowunmi Mary
+AU  - Ayogu, Ikechukwu Ignatius
+AU  - Anoh, Kelvin
+AU  - Adebisi, Bamidele
+PY  - 2025
+JO  - Technologies (2227-7080)
+AB  - The integration of edge-to-cloud infrastructures in smart grid (SG) data center networks requires scalable, efficient, and secure architecture. Traditional server-based SG data center architectures face high computational loads and delays. To address this problem, a lightweight data center network (DCN) with low-cost, and fast-converging optimization is required. This paper introduces a container-based time synchronization model (CTSM) within a spine–leaf virtual private cloud (SL-VPC), deployed via AWS CloudFormation stack as a practical use case. The CTSM optimizes resource utilization, security, and traffic management while reducing computational overhead. The model was benchmarked against five DCN topologies—DCell, Mesh, Skywalk, Dahu, and Ficonn—using Mininet simulations and a software-defined CloudFormation stack on an Amazon EC2 HPC testbed under realistic SG traffic patterns. The results show that CTSM achieved near-100% reliability, with the highest received energy data (29.87%), lowest packetization delay (13.11%), and highest traffic availability (70.85%). Stateless container engines improved resource allocation, reducing administrative overhead and enhancing grid stability. Software-defined Network (SDN)-driven adaptive routing and load balancing further optimized performance under dynamic demand conditions. These findings position CTSM-SL-VPC as a secure, scalable, and efficient solution for next-generation smart grid automation.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.11395682
+AN  - EBSCO:edseee.11395682
+N1  - record_id: EBSCO:edseee.11395682
+TI  - Automating Multi-Cloud Deployments at Scale Using an Advanced GitOps Framework
+AU  - Lakhnakiya, Vishwa
+PY  - 2026
+JO  - 2026 IEEE 5th International Conference on AI in Cybersecurity (ICAIC), AI in Cybersecurity (ICAIC), 2026 IEEE 5th International Conference on
+AB  - Cloud service providers of their choice, such as AWS, Azure, and GCP, which serve 71% of enterprises, offer a better way to manage complexity by implementing Enterprise Kubernetes. EKS is currently used in production environments by 96% of enterprise organizations. Managing this type of cloud infrastructure across multiple cloud service providers creates many challenges related to configuration drift and maintaining compliance in highly regulated environments. To meet these challenges, this advanced architecture leverages a version-controlled Git repository as the ultimate source of compliance, enabling permanent reconciliation and atomic recovery of the system's integrity. This paper will discuss a scalable GitOps-based architecture that uses ArgoCD, integrated with forward-thinking Policy-as-Code (PaC) governance and Git-native automated resilience. While impressive results achieved through the use of the DORA Framework on enterprise delivery efficiency – 45% decrease in Change Failure Rate; and an impressive decrease of around 85% Mean Time to Recovery across a broad enterprise environment & reported standard deviation are used to support the theory of "complex" GitOps frameworks being critical factors in achieving consistent, reliable, and auditable infrastructure stewardship within enterprises, traversing multiple distributed Cloud-Native Ecosystems and across all parts of the Edge-Cloud continuum. The traditional DORA metrics verification provides empirical validation to the DORA Framework.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:154370530
+AN  - EBSCO:154370530
+N1  - record_id: EBSCO:154370530
+TI  - Cloud-Based Business Process Security Risk Management: A Systematic Review, Taxonomy, and Future Directions.
+AU  - Abioye, Temitope Elizabeth
+AU  - Arogundade, Oluwasefunmi Tale
+AU  - Misra, Sanjay
+AU  - Adesemowo, Kayode
+AU  - Damaševičius, Robertas
+PY  - 2021
+JO  - Computers (2073-431X)
+AB  - Despite the attractive benefits of cloud-based business processes, security issues, cloud attacks, and privacy are some of the challenges that prevent many organizations from using this technology. This review seeks to know the level of integration of security risk management process at each phase of the Business Process Life Cycle (BPLC) for securing cloud-based business processes; usage of an existing risk analysis technique as the basis of risk assessment model, usage of security risk standard, and the classification of cloud security risks in a cloud-based business process. In light of these objectives, this study presented an exhaustive review of the current state-of-the-art methodology for managing cloud-based business process security risk. Eleven electronic databases (ACM, IEEE, Science Direct, Google Scholar, Springer, Wiley, Taylor and Francis, IEEE cloud computing Conference, ICSE conference, COMPSAC conference, ICCSA conference, Computer Standards and Interfaces Journal) were used for the selected publications. A total of 1243 articles were found. After using the selection criteria, 93 articles were selected, while 17 articles were found eligible for in-depth evaluation. For the results of the business process lifecycle evaluation, 17% of the approaches integrated security risk management into one of the phases of the business process, while others did not. For the influence of the results of the domain assessment of risk management, three key indicators (domain applicability, use of existing risk management techniques, and integration of risk standards) were used to substantiate our findings. The evaluation result of domain applicability showed that 53% of the approaches had been testing run in real-time, thereby making these works reusable. The result of the usage of existing risk analysis showed that 52.9% of the authors implemented their work using existing risk analysis techniques while 29.4% of the authors partially integrated security risk standards into their work. Based on these findings and results, security risk management, the usage of existing security risk management techniques, and security risk standards should be integrated with business process phases to protect against security issues in cloud services.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.11323968
+AN  - EBSCO:edseee.11323968
+N1  - record_id: EBSCO:edseee.11323968
+TI  - Employ Blockchain to Boost Cloud Computing Cybersecurity: Product Data Integrity and Appropriate Access with Smart Contract Regulations
+AU  - Rani, A. Jaya Mabel
+AU  - A, Vijayanarayanan.
+AU  - R, Karthiga.
+AU  - M, Nisha
+AU  - Nagpal, Amandeep
+AU  - R, Hemalatha
+PY  - 2025
+JO  - 2025 IEEE 5th International Conference on ICT in Business Industry & Government (ICTBIG), ICT in Business Industry & Government (ICTBIG), 2025 IEEE 5th International Conference on
+AB  - The prevalence of cloud computing has changed how enterprises store, process and manage data. But the migration now also widens the attack vectors for cybersecurity threats leading to issues with data integrity, privacy and access in unauthorized manners. This work puts forward a blockchain based security framework to strengthen the security of cloud computing by protecting the integrity of product data and controlling access using smart contract rules. With blockchain-based decentralized, append-only, immutable ledger and smart contract programmability, the architecture supports secure data sharing, auditable trails, enforceable access rule automation that is not dependent on central parties. The blockchain works in the proposed system as trusted data infrastructure on which all transactions of crucial product data creation, request or update, are registered in an unchangeable way. The access to, as well as the modification of particular dataset is governed by smart contract living on blockchain, that enforce pre-defined access policies. This mitigates single-point of failures and insider attacks experienced by centralized cloud deployments. The framework is cloud-ready and is being gradually integrated with a penetration testing framework for cloud, as an overlay security layer. An anomaly detection with AI could be added to check access patterns and activate appropriate security procedures in case of suspicion. The blockchain-oriented architecture also enables distributed identity management, making it possible for enterprises to securely manage access control for identity across multi-cloud environments. Performance evaluation shows that our solution mitigates unauthorized accesses by $40+\%$ while also making the auditing of the logs so much easier (because of the immutability) and compliance cost minimal (as smart contracts do the job of security checks). In addition, it supports cross-organization computing in cloud ecology while keeping the data privacy. This work tackles the challenge of keeping cloud computing scalable and flexible while providing strong cybersecurity. Leveraging blockchain's trust model with a programmable access control and data integrity verification, the platform provides a secure, transparent, and a self-regulating cybersecurity infrastructure for cloud infrastructure. The proposed framework can be directly extended to any domain including manufacturing, healthcare and supply chain management where secure product data handling is a necessity.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:174215013
+AN  - EBSCO:174215013
+N1  - record_id: EBSCO:174215013
+TI  - From Insights to Business Model Innovation and Results: Using the Digital Transformation Canvas.
+AU  - Silvi, Riccardo
+AU  - Nielsen, Christian
+AU  - Pia, Andrea
+PY  - 2023
+JO  - Journal of Business Models
+AB  - Digital transformation is the process that a company must undertake to connect its operational model with all stakeholders to respond to ongoing market effective changes in technological trends and to create the conditions for anticipating future trends. This article introduces and explains the digital transformation canvas's components and tools, intending to provide a starting point for developing a digital transformation strategy and a plan of action to achieve this.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.CDAA268B
+AN  - EBSCO:edssjs.CDAA268B
+N1  - record_id: EBSCO:edssjs.CDAA268B
+TI  - Advancing multi-cloud: an efficient crypto strategy for securing unstructured information distribution
+AU  - Ranjan, Vivek
+AU  - Raichura, Harshit
+AU  - Singh, Preetjot
+AU  - Sohal, Jagmeet
+AU  - Kavitha, R.
+AU  - Yadav, Surendra
+PY  - 2024
+JO  - International Journal of System Assurance Engineering and Management
+AB  - The goal of this research is to enhance security in the multi-cloud storage solution by put forward a new cryptographic method for the unstructured data. The objective is to protect information and its integrity while also reducing threats from infringement and insecure document submissions. Multi-cloud environments are intricate solutions that involve the integration of more than one cloud storage solution to improve data processing and confront massive security challenges. They include protection against unauthorized access, secure uploading of documents, and data integrity in distributed storage systems. To tackle these problems, this study adopts the Elliptic-Blow Fused Cryptography (EbFC) technique that combines the use of elliptic curve cryptography and Blowfish encryption. This approach offers good assurance to risks and evils which might occur in the future. To evaluate the EbFC technique we use several file formats from YouTube in SUSID (Secure Unstructured Information Distribution). The study shows that the proposed EbFC technique has the potentialities of reducing the effects of both malicious user or intruder that are capable of operating unsafe information exchange over the multi-cloud environments. SUSID framework has achieved 100% overall security feature with higher rating in encryption processing time EPT and decryption processing time DPT. These outcomes illustrate the effectiveness of the use of the proposed EbFC method and suggest that the future studies should attempt further development of the algorithm and explore whether it could work with different types of data and cloud environment.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:188678739
+AN  - EBSCO:188678739
+N1  - record_id: EBSCO:188678739
+TI  - A Secure-by-Design Approach to Big Data Analytics Using Databricks and Format-Preserving Encryption.
+AU  - Lagos-Obando, Juan
+AU  - Aillapán, Gabriel
+AU  - Fenner-López, Julio
+AU  - Bustamante-Mora, Ana
+AU  - Burgos-López, María
+PY  - 2025
+JO  - Applied Sciences (2076-3417)
+AB  - Managing and analyzing data in data lakes for big data environments requires robust protocols to ensure security, scalability, and compliance with privacy regulations. The increasing need to process sensitive data emphasizes the relevance of secure-by-design approaches that integrate encryption techniques and governance frameworks to protect personal and confidential information. This study proposes a protocol that combines the capabilities of Databricks and format-preserving encryption to improve data security and accessibility in data lakes without compromising usability or structure. The protocol was developed using a design science methodology, incorporating findings from a systematic literature review and validated through expert feedback and proof-of-concept experiments in banking environments. The proposed solution integrates multiple layers, data ingestion, persistence, access, and consumption, leveraging the processing capabilities of Databricks and format-preserving encryption to enable secure data management and governance. Validation results indicate the protocol is effectiveness in protecting sensitive data, with promising applicability in regulated industries. This work contributes to addressing key challenges in big data security and lays the groundwork for future developments in data governance and encryption techniques.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.1BE1BB72
+AN  - EBSCO:edssjs.1BE1BB72
+N1  - record_id: EBSCO:edssjs.1BE1BB72
+TI  - Cloud outsourcing: a multigroup analysis of cloud risk and governance effectiveness of EU, US, and Canadian financial institutions
+AU  - Anderson-Princen, Jamelia M.
+PY  - 2025
+JO  - Risk Management
+AB  - One of the most important challenges facing financial institutions that outsource cloud technologies is the ability to devise efficient control structures. For this study, I surveyed senior cloud risk experts at large financial institutions in the US, the EU, and Canada to capture their concerns regarding 37 different risks in outsourcing. I employed a multigroup model to test for transaction misalignment and the overall degree of efficiency in managing risks. Empirical results reveal that institutional risk is a primary risk factor, and that all groups face similar risk and governance challenges, even in the face of divergent legal regimes and institutional practices. Additionally, the results showed that US institutions were among the most inefficient in the governance process. These findings indicate that hybrid transactions are difficult to govern owing to the incomplete nature of cloud contracts, the fragmented nature of the regulation, and the presence of institutional risk.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:173826571
+AN  - EBSCO:173826571
+N1  - record_id: EBSCO:173826571
+TI  - Efficient Resource Utilization in IoT and Cloud Computing.
+AU  - Prasad, Vivek Kumar
+AU  - Dansana, Debabrata
+AU  - Bhavsar, Madhuri D.
+AU  - Acharya, Biswaranjan
+AU  - Gerogiannis, Vassilis C.
+AU  - Kanavos, Andreas
+PY  - 2023
+JO  - Information
+AB  - With the proliferation of IoT devices, there has been exponential growth in data generation, placing substantial demands on both cloud computing (CC) and internet infrastructure. CC, renowned for its scalability and virtual resource provisioning, is of paramount importance in e-commerce applications. However, the dynamic nature of IoT and cloud services introduces unique challenges, notably in the establishment of service-level agreements (SLAs) and the continuous monitoring of compliance. This paper presents a versatile framework for the adaptation of e-commerce applications to IoT and CC environments. It introduces a comprehensive set of metrics designed to support SLAs by enabling periodic resource assessments, ensuring alignment with service-level objectives (SLOs). This policy-driven approach seeks to automate resource management in the era of CC, thereby reducing the dependency on extensive human intervention in e-commerce applications. This paper culminates with a case study that demonstrates the practical utilization of metrics and policies in the management of cloud resources. Furthermore, it provides valuable insights into the resource requisites for deploying e-commerce applications within the realms of the IoT and CC. This holistic approach holds the potential to streamline the monitoring and administration of CC services, ultimately enhancing their efficiency and reliability.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:179927190
+AN  - EBSCO:179927190
+N1  - record_id: EBSCO:179927190
+TI  - Achieving Environmental sustainability through the adoption of industry 4.0: an exploratory case study within the information technology industry.
+AU  - EL MERROUN, Mohamed
+AU  - ISTVAN JANOS, Bartók
+AU  - ALKHLAIFAT, Osama
+PY  - 2024
+JO  - Logistics, Supply Chain, Sustainability & Global Challenges
+AB  - The article delves into the adoption of Industry 4.0 in the information technology sector, outlining challenges such as decision-making limitations, data underutilization, skill shortages, and integration issues. A prominent company addressed these obstacles through investments in training, data handling, cybersecurity, and IT-OT fusion. It stresses the significance of overcoming these hurdles for successful Industry 4.0 integration and environmental preservation, particularly in waste, CO2 emissions, and energy management. The research underscores the pivotal role of AI in efficiently managing environmental data and promoting sustainable business practices.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:175791094
+AN  - EBSCO:175791094
+N1  - record_id: EBSCO:175791094
+TI  - Service application model design for users using fuzzy semantic ontology model in cloud computing.
+AU  - Arulkumar, V.
+AU  - Sandana Karuppan, A.
+AU  - Alex, Sini Anna
+AU  - Lathamanju, R.
+PY  - 2024
+JO  - Journal of Intelligent & Fuzzy Systems
+AB  - In an era marked by the widespread adoption of cloud services, individuals and businesses face the daunting task of navigating a complex landscape to make informed choices. The inherent opacity of the cloud service environment underscores the need for methods that can effectively handle imprecise information. This research presents a novel and superior approach to aid customers in selecting the most suitable cloud services. Our work introduces a distinctive fuzzy decision-making paradigm, surpassing current methodologies. We leverage an innovative analytic hierarchy process technique to quantify the semantic similarity between concepts and employ a fuzzy ontology to elucidate the uncertain relationships among database items, facilitating precise service matching. Furthermore, we present a multi-faceted evaluation framework for ranking cloud services. To substantiate the efficacy of our similarity matching based on the fuzzy ontology, we conduct comprehensive testing. The results of our experiments provide compelling evidence of the viability and effectiveness of the proposed method. This research offers a valuable contribution to the challenging realm of cloud service selection, empowering individuals and organizations to make well-informed decisions amidst the cloud service abundance.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.11378052
+AN  - EBSCO:edseee.11378052
+N1  - record_id: EBSCO:edseee.11378052
+TI  - Securing Big Data Storage in a Cloud Environment
+AU  - Deshmukh, Prachi N.
+AU  - Deshmukh, Vaishali H.
+PY  - 2025
+JO  - 2025 3rd DMIHER International Conference on Artificial Intelligence in Healthcare, Education and Industry (IDICAIHEI), Artificial Intelligence in Healthcare, Education and Industry (IDICAIHEI), 2025 3rd DMIHER International Conference on
+AB  - The exponential growth of Big Data demands advanced cloud security mechanisms that adapt to emerging cyber threats and ensure efficient data retrieval. Traditional centralized architectures and static encryption strategies struggle against modern attack vectors and scalability challenges. This paper proposes an intelligent cloud security framework integrating AI-driven sensitivity classification, quantum-resistant and adaptive encryption, blockchain-based key management, and multi-cloud redundancy. Homomorphic encryption enables privacy-preserving computation, while an AI-based encrypted search engine enhances secure data retrieval. Extensive simulations across finance, healthcare, and government datasets demonstrate improvements in encryption speed (35 %), storage efficiency (40 %), threat mitigation (28 %), and retrieval time (50 %). The proposed system offers a robust, scalable, and future-ready solution for securing Big Data storage in cloud ecosystems.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:186287423
+AN  - EBSCO:186287423
+N1  - record_id: EBSCO:186287423
+TI  - RACHEIM: Reinforced Reliable Computing in Cloud by Ensuring Restricted Access Control.
+AU  - Saxena, Urvashi Rahul
+AU  - Kadel, Rajan
+PY  - 2025
+JO  - Network (2673-8732)
+AB  - Cloud computing has witnessed rapid growth and notable technological progress in recent years. Nevertheless, it is still regarded as being in its early developmental phase, with substantial potential remaining to be explored—particularly through integration with emerging technologies such as the Metaverse, Augmented Reality (AR), and Virtual Reality (VR). As the number of service users increases, so does the demand for computational resources, leading data owners to outsource processing tasks to remote cloud servers. The internet-based delivery of cloud computing services consequently expands the attack surface and impacts the trust relationship between the service user and the service provider. To address these challenges, this study proposes a restricted access control framework based on homomorphic encryption (HE) and identity-based encryption (IBE) mechanisms. A formal analysis of the proposed model is also conducted under an unauthenticated communication model. Simulation results indicate that the proposed approach achieves a 20–40% reduction in encryption and decryption times, respectively, compared with existing state-of-the-art homomorphic encryption schemes. The simulation was performed using a 2048-bit key and data size, consistent with current industry standards, to improve key management efficiency. Additionally, the role-based hierarchy was implemented in a Salesforce cloud environment to ensure secure and restricted access control.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:160120039
+AN  - EBSCO:160120039
+N1  - record_id: EBSCO:160120039
+TI  - The Effective Utilization of Internet Bandwidth in Organizational Demand Services and Applications.
+AU  - Abubakar, Adamu
+AU  - Izza Wan Husin, Wan Nurul
+PY  - 2022
+JO  - International Journal of Information & Knowledge Management (22318836)
+AB  - This research evaluates the sustainable utilization of Internet bandwidth usage and proposes a framework for its study. Understanding how much internet bandwidth is required for business and individual use and to what extend individual users have to be familiar with it, is very important. The study seeks to (1) measure the relationship between organizational learning and effective utilization of internet bandwidth; (2) assess the relationship between organizational learning and organizational performance; and (3) investigate the mediating effect of effective utilization of internet bandwidth in influencing the relationship between organizational learning and organizational performance. A reasonable sample population (n=318) is selected from those Malaysian business firms that use Internet bandwidth. Structural equation modeling (SEM) was utilized to test the relationship among study variables. Further analysis indicates that the results support certain hypotheses. Organizational learning is found to be of critical importance in the effective utilization of Internet bandwidth. However, the effective utilization of bandwidth does not mediate the effect of the relationship between organizational learning and organizational performance. This can be explained by the fact that learning the use of Internet bandwidth improves individual usage and better decision-making in choosing Internet bandwidth-demand-services and applications of an organization, yet does not significantly increase the operational and financial performance.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:184262668
+AN  - EBSCO:184262668
+N1  - record_id: EBSCO:184262668
+TI  - Responsible CVD screening with a blockchain assisted chatbot powered by explainable AI.
+AU  - Muneer, Salman
+AU  - Abbas, Sagheer
+AU  - Shah, Asghar Ali
+AU  - Alharbi, Meshal
+AU  - Aldossary, Haya
+AU  - Fatima, Areej
+AU  - Ghazal, Taher M.
+AU  - Adnan, Khan Muhammad
+PY  - 2025
+JO  - Scientific Reports
+AB  - Cardiovascular disease (CVD) is rising as a significant concern for the healthcare sector around the world. Researchers have applied multiple traditional approaches to making healthcare systems find new solutions for the CVD concern. Artificial Intelligence (AI) and blockchain are emerging approaches that may be integrated into the healthcare sector to help responsible and secure decision-making in dealing with CVD concerns. Secure CVD information is needed while dealing with confidential patient healthcare data, especially with a decentralized blockchain technology (BCT) system that requires strong encryption. However, AI and blockchain-empowered approaches could make people trust the healthcare sector, mainly in diagnosing areas like cardiovascular care. This research proposed an explainable AI (XAI) approach entangled with BCT that enhances healthcare interpretability and responsibility to cardiovascular health medical experts. XAI is significant in addressing cardiovascular prediction issues and offers potential solutions for complex communication and decision-making in cardiovascular care. The proposed approach performs better, with the highest accuracy of 97.12% compared to earlier methods. This achievement shows its ability to tackle complex issues, accessible during healthcare sector communication and decision processes.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.12AF85CE
+AN  - EBSCO:edssjs.12AF85CE
+N1  - record_id: EBSCO:edssjs.12AF85CE
+TI  - Fuzzy based trust model for cloud access control classification mechanism using ghost net architecture
+AU  - Kalaiyarasi, D.
+AU  - Joy, R. Priscilla
+AU  - Jose, M. Victor
+AU  - Sridhar, P.
+PY  - 2024
+JO  - Wireless Networks: The Journal of Mobile Communication, Computation and Information
+AB  - Cloud computing (CC) is the rapid utilization of network resources, specifically processing power and data storage, without the need for extra or direct customer management. One of the crucial and difficult problems facing the scientific and business user communities is ensuring security and trust between users (UcUcUcUc) and Cloud Service Providers (CSP) from malicious users. As a result, it is important to trust UcUcUcUc and cloud resources before using them. In this research, a novel two-phase Access Control (AC) mechanism based on Deep learning (DL) has been proposed to confirm the reliability of the cloud and the trust of the UcUcUcUc in the cloud environment. In the first phase, the Mamdani fuzzy method with Trapezoid fuzzy logic (TFL) is applied to assess the trust value (TV) of UcUcUcUc based on Bogus Requests (BR), Unauthorized Requests (UR), Forbidden Requests (FR), Not Found Requests (NFR), and User Behavior (UB). In the second phase, the ghost net is used for attribute matching for deciding to access or deny the user request based on TV. The efficacy of the developed methodology is examined by employing several parameters, such as Time, Accuracy (Acc), recall, F-measure, and precision. The overall accuracy of the proposed model is 1.41%, 2.61%, and 5.14% better than the Multidimensional Dynamic Trust Evaluation Scheme (MDTES), Evolutionary Genetic Algorithm with Intelligent Rules (EGAIR), and Task-Role Based Access Control (T-RBAC) respectively. In comparison to existing methodologies, the proposed method showed improved efficiency in terms of Acc, and prediction time.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.607363FD
+AN  - EBSCO:edssjs.607363FD
+N1  - record_id: EBSCO:edssjs.607363FD
+TI  - Enhancing ERP Responsiveness Through Big Data Technologies: An Empirical Investigation
+AU  - Bandara, Florie
+AU  - Jayawickrama, Uchitha
+AU  - Subasinghage, Maduka
+AU  - Olan, Femi
+AU  - Alamoudi, Hawazen
+AU  - Alharthi, Majed
+PY  - 2024
+JO  - Information Systems Frontiers: A Journal of Research and Innovation
+AB  - Organizations are integrating big data technologies with Enterprise Resource Planning (ERP) systems with an aim to enhance ERP responsiveness (i.e., the ability of the ERP systems to react towards the large volumes of data). Yet, organizations are struggling to manage the integration between the ERP systems and big data technologies, leading to lack of ERP responsiveness. For example, it is difficult to manage large volumes of data collected through big data technologies and to identify and transform the collected data by filtering, aggregating and inferencing through the ERP systems. Building on this motivation, this research examined the factors leading to ERP responsiveness with a focus on big data technologies. The conceptual model which was developed through a systematic literature review was tested using Structural equation modelling (SEM) performed on the survey data collected from 110 industry experts. Our results suggested 12 factors (e.g., big data management and data contextualization) and their relationships which impact on ERP responsiveness. An understanding of the factors which impact on ERP responsiveness contributes to the literature on ERP and big data management as well as offers significant practical implications for ERP and big data management practice.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:160724304
+AN  - EBSCO:160724304
+N1  - record_id: EBSCO:160724304
+TI  - A Hybrid Optimized Resource Allocation Model for Multi-Cloud Environment Using Bat and Particle Swarm Optimization Algorithms.
+AU  - SELVAPANDIAN, D.
+AU  - SANTHOSH, R.
+PY  - 2022
+JO  - Computer Assisted Methods in Engineering & Science
+AB  - In cloud computing, scheduling and resource allocation are the major factors that define the overall quality of services. An efficient resource allocation module is required in cloud computing since resource allocation in a single cloud environment is a complex process. Whereas resource allocation in a multi-cloud environment further increases the complexity of allocation procedures. Earlier, resources from the multi-cloud environment were allocated based on task requirements. However, it is essential to analyze the present resource availability status and resource capability before allocating to the requested tasks. So, in this research work, a hybrid optimized resource allocation model is presented using bat optimization algorithm and particle swarm optimization algorithm to allocate the resource considering the resource status, distance, bandwidth, and task requirements. Proposed model performance is evaluated through simulation and compared with conventional optimization algorithms. For a set of 500 tasks, the proposed approach allocates resources in 47 s, with a minimum energy consumption of 200 kWh. Compared to conventional approaches, the performance of the proposed model is much better in terms of deadline missed tasks, resource requirement, energy consumption, and allocation time.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.9582205
+AN  - EBSCO:edseee.9582205
+N1  - record_id: EBSCO:edseee.9582205
+TI  - NL2Vul: Natural Language to Standard Vulnerability Score for Cloud Security Posture Management
+AU  - Bulut, Muhammed Fatih
+AU  - Hwang, Jinho
+PY  - 2021
+JO  - 2021 IEEE 14th International Conference on Cloud Computing (CLOUD), Cloud Computing (CLOUD), 2021 IEEE 14th International Conference on, CLOUD
+AB  - Cloud Security Posture Management (CSPM) tools have been gaining popularity to automate, monitor and visualize the security posture of multi-cloud environments. The foundation to assess the risk lies on being able to analyze each vulnerability and quantify its risk. However, the number of vulnerabilities in National Vulnerability Database (NVD) has skyrocketed in recent years and surpassed 144K as of late 2020. The current standard vulnerability tracking system relies mostly on human-driven efforts. Besides, open-source libraries do not necessarily follow the standards of vulnerability reporting set by CVE and NIST, but rather use Github issues for reporting. In this paper, we propose a framework, NL2Vul, to measure score of vulnerabilities with minimal human efforts. NL2Vul makes use of deep neural networks to train on descriptions of software vulnerabilities from NVD and predicts vulnerability scores. To flexibly expand the trained NVD model for different data sources that are being used to evaluate the risk posture in CSPM, NL2Vul uses transfer learning for quick re-training. We have evaluated NL2Vul with vanilla NVD, public Github issues of open source projects, and compliance technology specification documents.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.58BB28BE
+AN  - EBSCO:edssjs.58BB28BE
+N1  - record_id: EBSCO:edssjs.58BB28BE
+TI  - Leveraging chaos for enhancing encryption and compression in large cloud data transfers
+AU  - Bhattacharjee, Shiladitya
+AU  - Sharma, Himanshi
+AU  - Choudhury, Tanupriya
+AU  - Abdelmoniem, Ahmed M.
+PY  - 2024
+JO  - The Journal of Supercomputing: An International Journal of High-Performance Computer Design, Analysis, and Use
+AB  - One of the routine exercises to manage and improve the performance and utility of the cloud is the migration or transfer of cloud data whether it is large or small. However, it is extremely challenging to protect both data privacy and integrity concurrently while moving cloud data, particularly when it is very vast. Collectively, prior works fail to offer a complete solution to these problem. Even though data encryption and steganography techniques are popular and efficient, they provide higher time and space complexities and introduce information loss. As a result, the goal of this research is to provide a <i>chaos compression and encryption system based on chaos theory</i> to guarantee both data privacy and integrity during the transit or migration of massive cloud data. During data transmission, the entire data are compressed using a chaotic substitution box followed by an adaptive Huffman encoding algorithms. Therefore, the input data are efficiently transformed into a non-readable form which replaces the original data, making it difficult for an unethical individual or group to determine its true sense. Our evaluation results show that the proposed chaotic technique has a maximum entropy value of 7.99, which supports its ability to provide more privacy when compared to previous techniques. It also delivers the best bits per code of 4.41, a throughput of 2.89 MB/s, and a minimal information loss percentage of 0.0011%, demonstrating its superior time, space efficiency, and ability to improve data integrity over existing methods.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.11448550
+AN  - EBSCO:edseee.11448550
+N1  - record_id: EBSCO:edseee.11448550
+TI  - Generative AI in Cloud CRM: Securing Intelligent Workflows in Multi-Cloud Environments
+AU  - Soni, Hemant
+AU  - Perla, Srikanth
+AU  - Maddela, Srinivas
+AU  - Kumar, Uttam
+PY  - 2025
+JO  - 2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN), Wireless Computing and Networking (GCWCN), 2025 IEEE 3rd Global Conference on
+AB  - The fast adoption of Generative Artificial Intelligence (GenAI) inside Cloud-based Customer Relationship Management (CRM) platforms has completely changed the way the enterprises monitor customer data, automate interactions, and obtain strategic insights. Nonetheless, the implementation of GenAI-based CRM systems into a multi-cloud setup poses complicated issues with data security, model management, and workflow coordination. The paper proposes a cohesive structure of Securing Intelligent Workflows in Multi-Cloud CRM Environments based on a hybrid architecture which is a combination of Generative AI, federated policy enforcement and adaptive data pipelines. The system proposed automates decision-making and content creation as well as customer interaction via heterogeneous clouds like AWS, Azure, and GCP, based on large language models (LLMs), and meets the security requirements of systems like GDPR and ISO/IEC 27001. An AI-supported and zero-trust security model can improve the ability to resist insider threats and attempts at data exfiltration. The results of the experiment prove the better workflow efficiency, decreased policy violation rate, and higher accuracy of automation in comparison to the traditional CRM automation systems. Cross-cloud scalability, secure API orchestration, and explainable AI-driven audit trails have also been identified in the paper as enablers of trustful and intelligent CRM automation in enterprise ecosystems.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:191472901
+AN  - EBSCO:191472901
+N1  - record_id: EBSCO:191472901
+TI  - Is Multicloud the Future? Desirability of Compatibility in Cloud Computing Market.
+AU  - Hosseini, Leila
+AU  - Farahani, Mehdi H.
+AU  - Kumar, Subodha
+PY  - 2026
+JO  - Management Science (INFORMS)
+AB  - Leading online service providers, as major customers of cloud computing services, are increasingly adopting a multicloud strategy to enhance service delivery across different locations. However, compatibility issues among various cloud platforms complicate the implementation of this strategy. To address this challenge, cloud providers can offer a multicloud management platform that acts as a bridge between distinct cloud environments. Although such a platform can enhance customers’ multicloud experience, it also entails additional costs for the cloud providers. Our paper examines cloud providers’ compatibility decisions and the impact of compatibility on competing cloud providers and their customers. Our findings reveal that, when compatibility is established in equilibrium, cloud providers consistently set higher prices for their resources than when compatibility is absent. Additionally, we find that a cloud provider with greater market dominance always attracts more demand, whereas the rival with smaller market dominance may experience a demand decrease. Interestingly, when a cloud provider establishes compatibility in equilibrium, the competitor’s profit always increases, although customer welfare can decline under compatibility. These insights, along with other findings presented in the paper, can support cloud providers in deciding when to establish compatibility and how to price their resources effectively. Furthermore, we provide guidelines for policymakers on when compatibility could enhance customer welfare, supporting effective implementation of compatibility strategies.<italic>This paper was accepted by D. J. Wu, information systems.</italic><bold>Funding:</bold> S. Kumar thanks Temple Center for International Business Education and Research for partially supporting this research.<bold>Supplemental Material:</bold> The online appendix is available at https://doi.org/10.1287/mnsc.2023.01359.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:170719096
+AN  - EBSCO:170719096
+N1  - record_id: EBSCO:170719096
+TI  - A review on cloud security issues and solutions.
+AU  - Chaudhari, Ashish R.
+AU  - Gohil, Bhavesh N.
+AU  - Rao, Udai Pratap
+PY  - 2023
+JO  - Journal of Computer Security
+AB  - Cloud computing provides computing resources, platforms, and applications as a service in a flexible, cost-effective, and efficient way. Cloud computing has integrated with industry and many other fields in recent years, which prompted researchers to look into new technologies. Cloud users have moved their applications, data and services to the Cloud storage due to the availability and scalability of Cloud services. Cloud services and applications are provided through the Internet-based on a pay-per-use model. Plenty of security issues are created due to the migration from local to remote computing for both Cloud users and providers. This paper discusses an overview of Cloud computing, as well as a study of security issues at various levels of Cloud computing. The article also provides a complete review of security issues with their existing solutions for a better understanding of specific open research issues.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:193440644
+AN  - EBSCO:193440644
+N1  - record_id: EBSCO:193440644
+TI  - A Zero Trust Driven Federative Learning Algorithm for Privacy Enhancement.
+AU  - Pule, Beverly
+AU  - Nleya, Bakhe
+AU  - Sibiya, Khulekani
+PY  - 2026
+JO  - Applied Sciences (2076-3417)
+AB  - The proliferation of Enterprise Networks, characterized by heterogeneous devices, distributed data sources, and increasingly sophisticated cyber threats, has exposed the limitations of traditional perimeter-based security models. Guided by the principles of Zero Trust Architecture (ZTA), this paper presents a Zero-Trust (ZT)-Driven Federated Learning Algorithm for Privacy Enhancement (ZT-FL-PE), designed to safeguard model and data confidentiality in decentralized learning environments. By integrating ZTA's "never trust, always verify" posture with Federated Learning's (FL) decentralized training paradigm, the proposed framework eliminates the need for centralized data aggregation and significantly reduces the attack surface. The algorithm specifically targets two prominent threats to model privacy: property inference attacks (PIAs) and membership inference attacks (MIAs). We introduce adaptive verification mechanisms and privacy-preserving update transformations that enforce continuous authentication, constrain adversarial behavior, and strengthen resilience against inference-based exploitation. Experimental results demonstrate that ZT-FL-PE substantially enhances privacy protection while maintaining high model accuracy and imposing only low-to-moderate computational overhead, making it a practical and robust solution for modern ZT Enterprise environments.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:184161078
+AN  - EBSCO:184161078
+N1  - record_id: EBSCO:184161078
+TI  - Analysis of Azure Zero Trust Architecture Implementation for Mid-Size Organizations.
+AU  - Dakić, Vedran
+AU  - Morić, Zlatan
+AU  - Kapulica, Ana
+AU  - Regvart, Damir
+PY  - 2025
+JO  - Journal of Cybersecurity & Privacy
+AB  - The Zero Trust Architecture (ZTA) security system follows the "never trust, always verify" principle. The process constantly verifies users and devices trying to access resources. This paper describes how Microsoft Azure uses ZTA to enforce strict identity verification and access rules across the cloud environment to improve security. Implementation takes time and effort. Azure's extensive services and customizations require careful design and implementation. Azure administrators need help navigating and changing configurations due to its complex user interface (UI). Each Azure ecosystem component must meet ZTA criteria. ZTAs comprehensive policy definitions, multi-factor and passwordless authentication, and other advanced features are tested in a mid-size business scenario. The document delineates several principal findings concerning the execution of Azure's ZTA within mid-sized enterprises. Azure ZTA significantly improves security by reducing attack surfaces via ongoing identity verification, stringent access controls, and micro-segmentation. Nonetheless, its execution is resource-demanding and intricate, necessitating considerable expertise and meticulous planning. A notable disparity exists between theoretical ZTA frameworks and their practical implementation, characterized by disjointed management interfaces and user fatigue resulting from incessant authentication requests. The case studies indicate that although Zero Trust Architecture enhances organizational security and mitigates risks, it may disrupt operations and adversely affect user experience, particularly in hybrid and fully cloud-based settings. The study underscores the necessity for customized configurations and the equilibrium between security and usability to ensure effective ZTA implementation.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edseee.11420318
+AN  - EBSCO:edseee.11420318
+N1  - record_id: EBSCO:edseee.11420318
+TI  - A Zero-Trust, AI-RMF–Governed Architecture for LLM-Enabled Telemedicine-as-a-Service: Mitigating Poisoning, Leakage and Unsafe-Output Threats
+AU  - Julio, Yair Rivera
+AU  - Pinto Mangones, Angel D.
+AU  - Perez-Garcia, Nelson A.
+AU  - Huerta, Monica-Karel
+AU  - Viloria-Nunez, Cesar
+AU  - Hernandez, Frank Ibarra
+AU  - Torres Tovio, Juan
+AU  - Vega, Horderlin Robles
+AU  - De la Rosa Pareja, Jorge Enrique
+PY  - 2025
+JO  - 2025 LI Latin American Computer Conference (CLEI), Computer Conference (CLEI), 2025 LI Latin American
+AB  - Large-Language-Model (LLM) functionality is rapidly becoming a cornerstone of Telemedicine-as-a-Service (PGaaS) platforms. Recent Q1 studies demonstrate that even minuscule training-set or parameter perturbations can introduce persistent back-doors, while inference pipelines leak protected health information (PHI) if left unguarded. Building on the NIST AI Risk Management Framework (AI RMF), this paper proposes and implements a zero-trust, multi-cloud security architecture that couples (i) knowledge-graph–driven data-integrity validation, (ii) containerised fine-tuning isolation, (iii) AI-RMF–centred governance and continuous risk registers, (iv) a privacy-preserving response-sanitisation gateway enhanced with one-time-password (OTP) and KYC identity binding, and (v) remote-attestation-backed zero-knowledge-proof (ZKP) integrity challenges for model weights at runtime. An extensive multi-cloud evaluation shows that the framework detects 94.6 % of tainted samples before ingestion and blocks 91.3 % of unsafe outputs, with a median latency overhead of 66 ms—well below clinical tele-consultation thresholds.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:192961364
+AN  - EBSCO:192961364
+N1  - record_id: EBSCO:192961364
+TI  - Cognitive ZTNA: A Neuro-Symbolic AI Approach for Adaptive and Explainable Zero Trust Access Control.
+AU  - Alzahrani, Ahmed
+PY  - 2026
+JO  - Mathematics (2227-7390)
+AB  - Zero Trust Network Access (ZTNA) has emerged as a fundamental paradigm for securing cloud-native and distributed computing environments. However, existing ZTNA implementations remain largely limited by static policy enforcement and opaque machine-learning-based anomaly detection mechanisms, which often lack contextual adaptability, policy awareness, and interpretable decision-making capabilities. These limitations create significant challenges in dynamic multi-cloud environments where access behavior continuously evolves and security decisions must be both accurate and explainable. To address these challenges, this study proposes Cognitive ZTNA framework, a unified neuro-symbolic trust enforcement framework that integrates transformer-based behavioral trust modeling with ontology-guided symbolic reasoning. The proposed architecture enables continuous trust evaluation by combining behavioral access patterns with explicit policy semantics through a hybrid trust fusion mechanism. This design allows the system to capture long-range behavioral dependencies while maintaining policy-compliant and interpretable access control decisions. The framework is evaluated using the CloudZT-Bench-2025 dataset, comprising 4.2 million cross-platform access events derived from enterprise security telemetry, AWS CloudTrail logs, and simulated adversarial scenarios. Experimental results demonstrate that Cognitive ZTNA achieves Precision = 0.96, Recall = 0.93, and F1-score = 0.95, significantly outperforming rule-based and machine-learning baselines while reducing the false positive rate to 0.03. In addition, the system maintains real-time feasibility with an average decision latency of 24 ms and explanation latency below 5 ms, while achieving 92% analyst-rated explanation sufficiency. These findings demonstrate that integrating behavioral intelligence with symbolic policy reasoning enables adaptive, interpretable, and policy-aware Zero Trust enforcement. The proposed framework therefore provides a practical foundation for next-generation ZTNA systems capable of supporting secure, transparent, and context-aware access control in modern cloud environments.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.D543E3C8
+AN  - EBSCO:edssjs.D543E3C8
+N1  - record_id: EBSCO:edssjs.D543E3C8
+TI  - Multi-cloud security model: establishment of inter-server communication for authentication integrity
+AU  - Kaur, Sumeet
+AU  - Khare, Mayank Deep
+AU  - Bhatt, Mukul
+AU  - Haripriya, V.
+AU  - Kumar, Ajay
+AU  - Singla, Abhishek
+PY  - 2024
+JO  - International Journal of System Assurance Engineering and Management
+AB  - Safety measures are used in multi-cloud security to protect infrastructure, apps, and data that are spread across several cloud environments. It necessitates lowering the risks connected to dispersed data access and storage by maintaining honesty and secrecy across several cloud platforms. The purpose of this research is to develop a novel inter-server communication for securing a multi-cloud environment. We discuss several challenges associated with utilizing many clouds and offering solutions such as the Supersingular isogeny Diffie–Hellman (SIDH) algorithm to prevent sensitive messages from being intercepted during internal server communications, Attribute-based encryption with outsourced decryption (ABE-OD) for fine-grained access control, rekeying at user withdrawal, Blowfish for message encryption, Rivest, Shamir, and Adleman (RSA) for key encryption. Our suggested paradigm includes anexchange of keys methodology to strengthen server-to-server prerequisites for communications in addition to security for fine-grained data security and access control on systems for storing. The RSA technique is used in the suggested concept to encrypt secret keys, allowing the encrypted keys to be stored in the database proxy server. The computation times for the construction of the BLAKE2 hash, data encryption, data decryption, and SIDH key exchange were determined. We made use of many parameters, including hash generation time, encryption time, and decryption time. The outcomes of the parameters are hash generation time of 2 mb (45), 4 mb (167), 8 mb (301), 16 mb (421), 22 mb (563), 28 mb (685), 32 mb (705), 36 mb (911), 42 mb (1027), encryption times of 2 mb (24), 4 mb (90), 8 mb (170), 16 mb (265), 22 mb (342), 28 mb (420), 32 mb (508), 36 mb (595), 42 mb (712), and decryption time of 2 mb (42), 4 mb (164), 8 mb (298), 16 mb (417), 22 mb (560), 28 mb (682), 32 mb (705), 36 mb (907), 42 mb (1024). Based on the inter-server communication system, the experiment results demonstrate the effectiveness of the recommended methodology in securing a multi-cloud environment.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:edssjs.7A159F5B
+AN  - EBSCO:edssjs.7A159F5B
+N1  - record_id: EBSCO:edssjs.7A159F5B
+TI  - Design of cloud-based security model with multiple CSPs
+AU  - Gupta, Megha
+AU  - Sobti, Sakshi
+AU  - Jain, Kshipra
+AU  - Gobi, N.
+AU  - Vashisht, Nitish
+AU  - Ahmed, Zahid
+PY  - 2025
+JO  - International Journal of System Assurance Engineering and Management
+AB  - Although cloud computing (CC) provides information technology (IT) services online, security issues also are brought by it. Consumers frequently save private data with unreliable providers and decentralized computing has problems due to the loss of administrator access. Because multi-cloud settings may lower risk by assuring security and responsibility, investigators have looked into the contribution of inter-cloud suppliers in privateness for improved solutions. Enterprises utilize the advanced encryption standard (AES), a symmetric key encryption method, to safely protect and retrieve data from cloud storage while ensure confidentiality and protection of data for additional users. The Byzantine fault tolerance model (BFTM) is used to verify the accuracy of user input. In research, a novel method augmented advanced encryption standard (AAES) is presented. Absolute protection and data security whilst retrieval and storage are both achieved with the assist of the suggested AAES approach. The performance of the AAES technique become assessed in a simulated environment and at the real-time dataset. The effectiveness of the suggested approach is classified and contrasted with that of other currently used methods. Based at the study’s findings, it can be said that the suggested AAES performs better than present methods in decreasing the threat to cloud protection.<br />
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:189118946
+AN  - EBSCO:189118946
+N1  - record_id: EBSCO:189118946
+TI  - Advanced cloud security framework based on zero trust architecture and adaptive deep learning for next-generation systems.
+AU  - Basim, Israa
+AU  - Makhlouf, Amel Meddeb
+AU  - Fakhfakh, Ahmed
+PY  - 2025
+JO  - Indonesian Journal of Electrical Engineering & Computer Science
+AB  - Static rule-based models and cloud access security brokers (CASBs) -- traditional cloud security frameworks--can no longer effectively mitigate modern and evolving cyber threats. Two such examples include signature-based detection methods which lack real-time versatility and are ineffective against advanced persistent threats or zero-day threats. In this paper, we introduce an adaptive zero trust framework (AZTF) based on the integration of zero trust architecture (ZTA) and adaptive deep learning (ADL) approach to dynamically evaluate threats and risks being targeted on cloud environments. It continually monitors access attempts using DL models for real-time anomaly detection. Nine synthetic datasets were generated and used in the experiment in two security domains: network traffic and access pattern. The proposed system reached 96% detection accuracy, 52% improvements in response time, and 12% resource consumption optimization compared to traditional ZTA-based security models. The results highlight the power of using a combination of continuous authentication with artificial intelligence (AI)-powered dynamic security policy application to strengthen the resilience of cloud security. Future research will focus on federated learning integration, multi-cloud security applications, and explainable AI for increased transparency of models.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:S0167404825002883
+AN  - EBSCO:S0167404825002883
+N1  - record_id: EBSCO:S0167404825002883
+TI  - Security and privacy in multi-cloud and hybrid cloud environments: Challenges, strategies, and future directions
+AU  - Ali, Sijjad
+AU  - Talpur, Dhani Bux
+AU  - Abro, Adeel
+AU  - Alshudukhi, Khulud Salem
+AU  - Alwakid, Ghadah Naif
+AU  - Humayun, Mamoona
+AU  - Bashir, Farhan
+AU  - Wadho, Shuaib Ahmed
+AU  - Shah, Asadullah
+PY  - 2025
+JO  - Computers & Security
+AB  - The rapid adoption of multi-cloud and hybrid cloud environments has revolutionized modern computing by enhancing scalability, flexibility, and cost-efficiency. However, these environments introduce significant security and privacy challenges due to the distributed nature of data storage, heterogeneous infrastructures, and intercloud communications. This review comprehensively examines the critical security and privacy concerns associated with multi-cloud and hybrid cloud architectures, including data confidentiality, access control, secure communication, regulatory compliance, and emerging attack vectors such as cross-cloud threats and side-channel attacks. We analyze existing security strategies, including cryptographic techniques, identity and access management (IAM) mechanisms, AI-driven threat detection, and privacy-preserving methodologies. Furthermore, we provide a comparative evaluation of these approaches, highlighting their trade-offs in terms of security effectiveness, computational overhead, and deployment feasibility. In addition, we explore emerging trends such as post-quantum cryptography, zero-trust architectures, decentralized security frameworks, and AI-powered security automation to mitigate evolving threats. Finally, we outline open research challenges and future directions, emphasizing the need for scalable, adaptive, and regulation-compliant security solutions. This review serves as a foundation for researchers and practitioners aiming to enhance security and privacy in multi-cloud and hybrid cloud infrastructures, ensuring robust and resilient cloud computing ecosystems.
+ER  - 
+
+TY  - JOUR
+ID  - EBSCO:189831060
+AN  - EBSCO:189831060
+N1  - record_id: EBSCO:189831060
+TI  - A Secure Access Framework for IoT–Cloud Integration With Blockchain and Bi‐GCN.
+AU  - M. S., Kavitha
+AU  - K., Gayathri Devi
+AU  - Byun, Jin Wook
+PY  - 2025
+JO  - IET Information Security (Wiley-Blackwell)
+AB  - Digital advancements have made cloud computing and IoT essential for innovative environments such as healthcare and industry. Cloud platforms offer scalable compute and storage capabilities, whereas IoT devices generate real‐time data. However, there are significant challenges faced while integrating the IoT with cloud to achieve robust, scalable, and secure access control. Traditional centralized models, such as static rule‐based mechanisms and public key infrastructure (PKI), are prone to single points of failure and suffer from limited scalability and poor adaptability. To address these issues, this paper proposes a decentralized access control architecture that combines blockchain with a hybrid bidirectional graph convolutional network (Bi‐GCN). The framework integrates ciphertext policy‐attribute based encryption (CP‐ABE) with trusted platform module (TPM)–based pseudonymous identities and the blockchain smart contracts for fine‐ and hardware‐assisted access control. A generative adversarial network (GAN)‐assisted prevalidation layer filters sybil, tampering, and spoofing attempts before block inclusion, enhancing integrity and reducing overhead. Bi‐GCN supports real‐time anomaly detection, trust adaptation, and behavior profiling, while smart contracts enforce adaptive role‐attribute policies. Experimental results show that the proposed model outperforms existing methods across key metrics, including 0.97 accuracy, 0.98 F‐measure, and minimal security overhead of 0.7%. Although it introduces slight latency due to advanced processing, the benefits of secure and intelligent access management outweigh the trade‐off. The integration of blockchain ensures decentralized and immutable policy enforcement, while Bi‐GCN facilitates self‐adaptive security, making the architecture suitable for dynamic IoT–cloud ecosystems.
+ER  - 
+

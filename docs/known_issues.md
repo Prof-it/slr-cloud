@@ -71,6 +71,6 @@ be resolved in the journal extension, not by editing v1 records.
 
 14. **Full-text PDFs.** Only the two IEEE Access papers (CC BY 4.0) may be
     redistributed. The other eight publisher PDFs are excluded via
-    `.gitignore`, but they are still tracked in the current index and present
-    in git history and must be removed from both before the repository is
-    made public.
+    `.gitignore`. They were removed from the index and from the entire git
+    history (`git filter-repo`, 2026-11-26) before the repository was made
+    public; retrieve them via the DOIs in `06_included_studies/included_studies.csv`.
